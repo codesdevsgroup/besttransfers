@@ -1,3 +1,7 @@
-﻿img{
-    right: 0;
+﻿#home {
+    background: #232324;
+    color: #fff;
+}
+.nav-link{
+    color: #fff;
 }
