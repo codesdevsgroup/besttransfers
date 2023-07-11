@@ -1,8 +1,4 @@
-﻿#home {
-    background: #232324;
-    color: #fff;
-}
-.nav-link{
+﻿.nav-link{
     color: #fff;
 }
 button{
@@ -19,10 +15,16 @@ button{
 }
 
 /* home */
-
+#home {
+    background: #232324;
+    color: #fff;
+    background-image: url(./../img/img-car-home.png);
+    height: 100vh;
+}
 .home_text {
     width: 525px;
     height: 233px;
+    margin-top: 300px;
 }
 .home_text h1 {
     font-size: 64px;
@@ -33,3 +35,53 @@ button{
 }
 
 /* executive transportation */
+#executive_transportation{
+    margin-top: 120px;
+    font-family: 'Poppins';
+    font-size: 32px;
+    line-height: 150%;
+    color: #3F3F3F;
+}
+.et_cards{
+    width: 796px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 180px;
+}
+.et_card{
+    width: 252px;
+    height: 210px;
+    padding: 24.579710006713867px 19.97101402282715px 24.579710006713867px 19.97101402282715px;
+    border-radius: 12px;
+    background: linear-gradient(90.03deg, #A30808 2.41%, #2A2C31 133.42%);
+    margin: 10px;
+}
+.et_card img{
+    margin-top: 10px;
+}
+.et_card p{
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #E9E9E9;
+    padding-top: 24.6px;
+}
+
+/* Get to know our cars */
+
+
+
+
+
+
+
+
+/* cars */
+
+
+/* multilingual drivers */
+#multilingual_drivers{
+
+}
