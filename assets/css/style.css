@@ -5,3 +5,31 @@
 .nav-link{
     color: #fff;
 }
+button{
+    background: linear-gradient(50deg, #A30808 2%, #2A2C31 130%);
+    border-radius: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding: 4px 60px;
+    border-color: transparent;
+}
+
+/* home */
+
+.home_text {
+    width: 525px;
+    height: 233px;
+}
+.home_text h1 {
+    font-size: 64px;
+}
+.home_text p {
+    font-size: 20px;
+    width: 340px;
+}
+
+/* executive transportation */
