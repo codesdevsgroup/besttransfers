@@ -84,6 +84,22 @@ h2 {
     font-weight: 500;
     line-height: 54px;
     letter-spacing: 0em;
+    padding-bottom: 40px;
+}
+.gc_icon_photos > div{
+    margin: 30px 0px 20px 100px;
+}
+.gc_seat p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25.6286px;
+    line-height: 38px;
+    background: linear-gradient(90.03deg, #A30808 2.41%, #2A2C31 133.42%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 /* cars */
