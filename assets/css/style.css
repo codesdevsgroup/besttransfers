@@ -13,6 +13,9 @@ button{
     padding: 4px 60px;
     border-color: transparent;
 }
+h2 {
+    color: rgba(63, 63, 63, 1);
+}
 
 /* home */
 #home {
@@ -28,6 +31,7 @@ button{
     width: 525px;
     height: 233px;
     margin-top: 300px;
+    font-family: 'Poppins';
 }
 .home_text h1 {
     font-size: 64px;
@@ -73,13 +77,14 @@ button{
 }
 
 /* Get to know our cars */
-
-
-
-
-
-
-
+#get_cars h2{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+    letter-spacing: 0em;
+}
 
 /* cars */
 #cars h2{
@@ -110,7 +115,10 @@ button{
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: #787878;
+    color: rgba(120, 120, 120, 1);
+}
+.md_cards{
+    margin-top: 80px;
 }
 .md_card{
     display: flex;
@@ -136,12 +144,13 @@ button{
     height: 627.23px;
     border-radius: 20px;
     background: linear-gradient(90.34deg, #262626 40%, #949494 170%);
-    margin: 0 auto;
+    margin: 160px auto;
     color: #fff;
 }
 .contact_grid h2 {
     text-align: center;
     padding-bottom: 28px;
+    color: #fff;
 }
 .contact_forms {
     width: 1060px;
