@@ -135,7 +135,7 @@ button{
     width: 1246px;
     height: 627.23px;
     border-radius: 20px;
-    background: linear-gradient(90.34deg, #262626 43.23%, #949494 186.93%);
+    background: linear-gradient(90.34deg, #262626 40%, #949494 170%);
     margin: 0 auto;
     color: #fff;
 }
@@ -189,3 +189,14 @@ button{
 }
 
 /* footer */
+footer {
+    margin-top: 120px;
+    height: 500px;
+    background-color: #232324;
+    padding-top: 100px;
+    color: #fff;
+
+}
+footer h2{
+    font-size: 18px;
+}
