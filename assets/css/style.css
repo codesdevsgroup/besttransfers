@@ -117,7 +117,7 @@ h2 {
 #multilingual_drivers{
     width: 912px;
     height: 303px;
-    margin: 0 auto;
+    margin: 120px auto;
 }
 #multilingual_drivers h3{
     font-family: 'Poppins';
@@ -224,6 +224,7 @@ footer {
 }
 footer h2 {
     font-size: 18px;
+    color: #fff;
 }
 .footer_social img {
     padding: 4px;
