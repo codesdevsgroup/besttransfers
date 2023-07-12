@@ -19,6 +19,9 @@ button{
     background: #232324;
     color: #fff;
     background-image: url(./../img/img-car-home.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
     height: 100vh;
 }
 .home_text {
@@ -79,9 +82,110 @@ button{
 
 
 /* cars */
-
+#cars h2{
+    margin-top: 80px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #3F3F3F;
+    padding-bottom: 40px;
+}
 
 /* multilingual drivers */
 #multilingual_drivers{
-
+    width: 912px;
+    height: 303px;
+    margin: 0 auto;
 }
+#multilingual_drivers h3{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #3F3F3F;
+}
+#multilingual_drivers > p{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #787878;
+}
+.md_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    width: 204px;
+    height: 120px;
+    background: linear-gradient(90.01deg, #262626 39.04%, #949494 113.59%);
+    margin: 20px;
+    color: #fff;
+}
+.md_card img {
+    padding-bottom: 12px;
+    padding-top: 16px;
+}
+
+/* contact */
+.contact_grid {
+    padding-top: 80px;
+    width: 1246px;
+    height: 627.23px;
+    border-radius: 20px;
+    background: linear-gradient(90.34deg, #262626 43.23%, #949494 186.93%);
+    margin: 0 auto;
+    color: #fff;
+}
+.contact_grid h2 {
+    text-align: center;
+    padding-bottom: 28px;
+}
+.contact_forms {
+    width: 1060px;
+    height: 300px;
+    grap: 32px;
+    margin: 0 auto;
+}
+.contact_forms label{
+    font-family: Lato;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+.contact_forms input{
+    margin-bottom: 32px;
+    background: transparent;
+    border-color: rgba(135, 135, 135, 1);
+    color: #fff;
+}
+.contact_forms input:focus{
+    color: #fff;
+    border: 1px;
+}
+.contact_forms_a input {
+    width: 522px;
+    height: 32px;
+    border-radius: 8px;
+}
+.contact_forms_a label {
+    height: 0;
+}
+.contact_forms_b input {
+    width: 522px;
+    height: 32px;
+    border-radius: 8px;
+}
+.contact_forms_c input{
+    width: 258px;
+    height: 32px;
+    border-radius: 8px;
+}
+.contact_forms_c > div {
+    margin-right: 6px;
+}
+
+/* footer */
