@@ -86,9 +86,6 @@ h2 {
     letter-spacing: 0em;
     padding-bottom: 40px;
 }
-.gc_icon_photos > div{
-    margin: 30px 0px 20px 100px;
-}
 .gc_seat p{
     font-family: 'Poppins';
     font-style: normal;
@@ -101,7 +98,17 @@ h2 {
     background-clip: text;
     text-fill-color: transparent;
 }
-
+.gc_icon_photos > div{
+    margin: 30px 0px 20px 160px;
+}
+#gc_footer{
+    margin-top: 50px;
+    padding-inline: 100px 200px;
+}
+#gc_footer img{
+    width: 186px;
+    height: 173px;
+}
 /* cars */
 #cars h2{
     margin-top: 80px;
