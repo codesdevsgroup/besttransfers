@@ -197,6 +197,10 @@ footer {
     color: #fff;
 
 }
-footer h2{
+footer h2 {
     font-size: 18px;
+}
+.footer_social img {
+    padding: 4px;
+    padding-top: 20px;
 }
