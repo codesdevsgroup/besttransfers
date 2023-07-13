@@ -1,1 +1,30 @@
-﻿
+﻿@media (max-width: 600px){
+    
+    /* Home */
+    #icon_home{
+        display: inline;
+    }
+    .home_text {
+        width: 340px;
+        margin-top: 40px;
+    }
+    .home_text h1 {
+        font-size: 36px;
+    }
+    .home_text p {
+        font-size: 16px;
+    }
+    #home{
+        background-position: center right;
+    }
+    .home_button {
+        margin-top: 35vh;
+        text-align: center;
+    }
+
+    /* Footer */
+
+    footer {
+        height: 620px;
+    }
+}

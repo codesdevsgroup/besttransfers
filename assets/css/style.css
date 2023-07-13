@@ -40,6 +40,9 @@ h2 {
     font-size: 20px;
     width: 340px;
 }
+#icon_home{
+    display: none;
+}
 
 /* executive transportation */
 #executive_transportation{
@@ -128,7 +131,7 @@ h2 {
 #multilingual_drivers{
     width: 912px;
     height: 303px;
-    margin: 120px auto;
+    margin: 100px auto;
 }
 #multilingual_drivers h3{
     font-family: 'Poppins';
@@ -225,7 +228,7 @@ h2 {
 /* footer */
 footer {
     margin-top: 120px;
-    height: 500px;
+    height: 400px;
     background-color: #232324;
     padding-top: 100px;
     color: #fff;
@@ -233,8 +236,16 @@ footer {
 footer h2 {
     font-size: 18px;
     color: #fff;
+    margin-bottom: 10px;
+}
+.footer_contact img {
+    margin-right: 8px;
+}
+.footer_contact h2{
+    margin-bottom: 30px;
 }
 .footer_social img {
     padding: 4px;
     padding-top: 20px;
+    
 }
