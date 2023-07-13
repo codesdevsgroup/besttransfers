@@ -1,20 +1,143 @@
-﻿.nav-link{
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.nav-link {
     color: #fff;
 }
-button{
-    background: linear-gradient(50deg, #A30808 2%, #2A2C31 130%);
+button {
+    background: linear-gradient(50deg, #a30808 2%, #2a2c31 130%);
     border-radius: 30px;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 4px 60px;
     border-color: transparent;
 }
 h2 {
     color: rgba(63, 63, 63, 1);
+}
+
+.mobile-options {
+    display: none;
+}
+
+#navigation {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: transparent;
+}
+
+#navigation nav .nav-list > li {
+    padding: 15px 12px;
+}
+
+#navigation nav {
+    height: 80px;
+    padding-block: 12px;
+}
+
+#navigation a {
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    transition: color 0.4s ease-in-out;
+}
+
+#navigation a.active,
+#navigation li:hover > a {
+    color: white;
+}
+
+#navigation nav .options {
+    gap: 14px;
+}
+
+#navigation nav select {
+    border: none;
+    background: rgba(51, 51, 51, 1);
+    margin-left: 15px;
+    padding: 13.5px 25px 13.5px 25px;
+    color: white;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+}
+
+#navigation nav .form-select {
+    background: transparent url('../img/icon-arow-down.svg') 85% 50% no-repeat;
+}
+
+#navigation nav select option {
+    background-color: rgba(51, 51, 51, 1);
+}
+
+#navigation nav .flag {
+    position: absolute;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+#navigation nav select:focus-visible,
+#navigation nav select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#navigation.scape {
+    top: -200px;
+    transition: top 0.3s ease-in-out;
+}
+
+#navigation.fixed {
+    background: #232324;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    transition: top 0.5s ease-in-out;
+}
+
+#navigation.fixed a {
+    color: white;
+}
+
+#navigation.fixed a.active,
+#navigation.fixed li:hover > a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#navigation.fixed nav {
+    height: 80px;
 }
 
 /* home */
@@ -26,12 +149,11 @@ h2 {
     background-position: top right;
     background-size: contain;
     height: 100vh;
+    padding-top: 80px;
 }
 .home_text {
     width: 525px;
     height: 233px;
-    margin-top: 300px;
-    font-family: 'Poppins';
 }
 .home_text h1 {
     font-size: 64px;
@@ -40,47 +162,47 @@ h2 {
     font-size: 20px;
     width: 340px;
 }
-#icon_home{
+#icon_home {
     display: none;
 }
 
 /* executive transportation */
-#executive_transportation{
+#executive_transportation {
     margin-top: 120px;
-    font-family: 'Poppins';
     font-size: 32px;
     line-height: 150%;
-    color: #3F3F3F;
+    color: #3f3f3f;
 }
-.et_cards{
+.et_cards {
     width: 796px;
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 140px;
 }
-.et_card{
+.et_card {
     width: 252px;
     height: 210px;
-    padding: 24.579710006713867px 19.97101402282715px 24.579710006713867px 19.97101402282715px;
+    padding: 24.579710006713867px 19.97101402282715px 24.579710006713867px
+        19.97101402282715px;
     border-radius: 12px;
-    background: linear-gradient(90.03deg, #A30808 2.41%, #2A2C31 133.42%);
+    background: linear-gradient(90.03deg, #a30808 2.41%, #2a2c31 133.42%);
     margin: 10px;
 }
-.et_card img{
+.et_card img {
     margin-top: 10px;
 }
-.et_card p{
+.et_card p {
     font-family: 'Lato';
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
-    color: #E9E9E9;
+    color: #e9e9e9;
     padding-top: 24.6px;
 }
 
 /* Get to know our cars */
-#get_cars h2{
+#get_cars h2 {
     text-align: center;
     font-family: Poppins;
     font-size: 36px;
@@ -89,68 +211,64 @@ h2 {
     letter-spacing: 0em;
     padding-bottom: 40px;
 }
-.gc_seat{
+.gc_seat {
     margin-top: 24px;
 }
-.gc_seat p{
-    font-family: 'Poppins';
+.gc_seat p {
     font-style: normal;
     font-weight: 700;
     font-size: 25.6286px;
     line-height: 38px;
-    background: linear-gradient(90.03deg, #A30808 2.41%, #2A2C31 133.42%);
+    background: linear-gradient(90.03deg, #a30808 2.41%, #2a2c31 133.42%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
-.gc_icon_photos > div{
+.gc_icon_photos > div {
     margin: 10px 0px 20px 140px;
 }
-#gc_footer{
+#gc_footer {
     margin-top: 30px;
     padding-inline: 100px 200px;
 }
-#gc_footer img{
+#gc_footer img {
     width: 186px;
     height: 173px;
 }
 
 /* cars */
-#cars h2{
+#cars h2 {
     margin-top: 80px;
-    font-family: 'Poppins';
     font-weight: 500;
     font-size: 32px;
     line-height: 48px;
-    color: #3F3F3F;
+    color: #3f3f3f;
     padding-bottom: 40px;
 }
 
 /* multilingual drivers */
-#multilingual_drivers{
+#multilingual_drivers {
     width: 912px;
     height: 303px;
     margin: 100px auto;
 }
-#multilingual_drivers h3{
-    font-family: 'Poppins';
+#multilingual_drivers h3 {
     font-weight: 500;
     font-size: 32px;
     line-height: 48px;
-    color: #3F3F3F;
+    color: #3f3f3f;
 }
-#multilingual_drivers > p{
-    font-family: 'Lato';
+#multilingual_drivers > p {
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     color: rgba(120, 120, 120, 1);
 }
-.md_cards{
+.md_cards {
     margin-top: 80px;
 }
-.md_card{
+.md_card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,7 +306,7 @@ h2 {
     grap: 32px;
     margin: 0 auto;
 }
-.contact_forms label{
+.contact_forms label {
     font-family: Lato;
     font-size: 17px;
     font-weight: 600;
@@ -196,13 +314,13 @@ h2 {
     letter-spacing: 0em;
     padding-bottom: 4px;
 }
-.contact_forms input{
+.contact_forms input {
     margin-bottom: 32px;
     background: transparent;
     border-color: rgba(135, 135, 135, 1);
     color: #fff;
 }
-.contact_forms input:focus{
+.contact_forms input:focus {
     color: #fff;
     border: 1px;
 }
@@ -216,7 +334,7 @@ h2 {
     height: 32px;
     border-radius: 8px;
 }
-.contact_forms_c input{
+.contact_forms_c input {
     width: 258px;
     height: 32px;
     border-radius: 8px;
@@ -241,11 +359,10 @@ footer h2 {
 .footer_contact img {
     margin-right: 8px;
 }
-.footer_contact h2{
+.footer_contact h2 {
     margin-bottom: 30px;
 }
 .footer_social img {
     padding: 4px;
     padding-top: 20px;
-    
 }

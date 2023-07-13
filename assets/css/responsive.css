@@ -1,7 +1,84 @@
-﻿@media (max-width: 600px){
-    
+﻿@media screen and (max-width: 1200px) {
+    /*   navbar mobile */
+    #navigation nav .nav-list,
+    .desktop-button {
+        display: none !important;
+    }
+    .options .desktop {
+        display: none !important;
+    }
+    .mobile-options {
+        display: flex;
+        position: relative;
+    }
+    .mobile-options svg {
+        cursor: pointer;
+    }
+    #navigation .mobile-options svg path {
+        fill: #2d5fff;
+    }
+    #navigation.fixed .mobile-options svg path {
+        fill: white;
+    }
+    .nav-list-mobile {
+        width: 266px;
+        background-color: var(--primary-color);
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -280px;
+        transition: all 0.5s ease;
+        padding: 31px 36px;
+    }
+    .nav-list-mobile.open {
+        right: 0;
+    }
+    .nav-list-mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 17px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 38px;
+    }
+    .nav-list-mobile-body .sub-nav-list .open {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    #navigation .nav-list-mobile-body li {
+        position: relative;
+    }
+
+    #navigation .nav-list-mobile-body > li {
+        margin-bottom: 38px;
+    }
+
+    #navigation .nav-list-mobile-body .sub-nav-list li {
+        margin-top: 20px;
+    }
+
+    #navigation .nav-list-mobile-body li::before {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 0;
+        width: 3px;
+        height: 24px;
+        background: #00a5df;
+        border-radius: 100px;
+        transition: all 0.4s ease;
+        opacity: 0;
+    }
+
+    #navigation .nav-list-mobile-body li:hover::before {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
     /* Home */
-    #icon_home{
+    #icon_home {
         display: inline;
     }
     .home_text {
@@ -14,7 +91,7 @@
     .home_text p {
         font-size: 16px;
     }
-    #home{
+    #home {
         background-position: center right;
     }
     .home_button {

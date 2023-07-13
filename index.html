@@ -1,334 +1,526 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap"
+            rel="stylesheet"
+        />
 
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-        crossorigin="anonymous"
-    />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+        ></script>
+        <script src="./assets/js/alpine.js"></script>
 
-    <link rel="stylesheet" href="./assets/css/carousel.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-    
-    <title>BESTTRANSFERS</title>
+        <link rel="stylesheet" href="./assets/css/carousel.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <link rel="stylesheet" href="./assets/css/bootstrap-custom.css" />
 
-</head>
-<body>
-<header id="home">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg  transparent">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" alt=""/></a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
+        <title>BESTTRANSFERS</title>
+    </head>
+    <body>
+        <header id="navigation">
+            <nav
+                class="d-flex container justify-content-between align-items-center position-relative"
+            >
+                <a href="#home">
+                    <img
+                        src="assets/img/logo.png"
+                        alt="logo codes devs"
+                        class="img-fluid logo"
+                    />
+                </a>
+                <ul class="d-flex nav-list mar-e-5">
+                    <li><a href="#home" class="active home">Início</a></li>
+                    <li>
+                        <a href="#services" class="services">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="portfolio">Portfólio</a>
+                    </li>
+                    <li><a href="#banner" class="contact">Contato</a></li>
+                </ul>
+                <div class="options d-flex align-items-center">
+                    <div
+                        class="select-lang d-flex align-items-center position-relative"
                     >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                    class="collapse navbar-collapse"
-                    id="navbarSupportedContent"
-                >
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cars</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
+                        <img
+                            id="en-flag"
+                            class="flag d-none"
+                            src="assets/img/en-flag.png"
+                            alt="bandeira inglesa"
+                        />
+                        <img
+                            id="pt-flag"
+                            class="flag d-none"
+                            src="assets/img/pt-flag.png"
+                            alt="bandeira brasileira"
+                        />
+                        <img
+                            id="es-flag"
+                            class="flag d-none"
+                            src="assets/img/es-flag.png"
+                            alt="bandeira Espanhola"
+                        />
+                        <img
+                            id="fr-flag"
+                            class="flag d-none"
+                            src="assets/img/fr-flag.png"
+                            alt="bandeira Francesa"
+                        />
+                        <select
+                            name="lang"
+                            class="form-select"
+                            onchange="executeTranslation(event)"
+                        >
+                            <option value="pt">Pt</option>
+                            <option value="en">En</option>
+                            <option value="es">Es</option>
+                            <option value="fr">Fr</option>
+                        </select>
+                    </div>
+                    <div class="mobile-options" x-data="{ open: false }">
+                        <svg
+                            x-on:click="open = true"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M2.25 7C2.25 6.58579 2.58579 6.25 3 6.25H21C21.4142 6.25 21.75 6.58579 21.75 7C21.75 7.41421 21.4142 7.75 21 7.75H3C2.58579 7.75 2.25 7.41421 2.25 7ZM6 12C6 11.5858 6.33579 11.25 6.75 11.25H21C21.4142 11.25 21.75 11.5858 21.75 12C21.75 12.4142 21.4142 12.75 21 12.75H6.75C6.33579 12.75 6 12.4142 6 12ZM2.25 17C2.25 16.5858 2.58579 16.25 3 16.25H21C21.4142 16.25 21.75 16.5858 21.75 17C21.75 17.4142 21.4142 17.75 21 17.75H3C2.58579 17.75 2.25 17.4142 2.25 17Z"
+                                fill="white"
+                            />
+                        </svg>
+                        <div class="nav-list-mobile" :class="{'open': open}">
+                            <div class="nav-list-mobile-header">
+                                <svg
+                                    x-on:click="open = false"
+                                    width="17"
+                                    height="17"
+                                    viewBox="0 0 17 17"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 15.7431L15.7431 1M15.7431 15.7431L1 1"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                            <ul class="d-flex flex-column nav-list-mobile-body">
+                                <li>
+                                    <a href="#home" class="active home"
+                                        >Início</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#services" class="services"
+                                        >Serviços</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#portfolio" class="portfolio"
+                                        >Portfólio</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#banner" class="contact"
+                                        >Contato</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </header>
 
-    <div class="container">
-        <div class="home_text">
-            <h1>Travel in luxury and comfort</h1>
-            <p>Enjoy an exceptional trip with your own private driver.</p>
-        </div>
-        <div class="home_button d-grid">
-            <a href=""><button>Contact</button></a>
-            <a id="icon_home" class="pt-4" href=""><img src="./assets/img/icon_bottom.png" alt=""></a>
-        </div>
-    </div>
-
-</header>
-
-<section id="executive_transportation">
-    <div class="text-center">
-        <h2>Executive Transportation Services in Switzerland</h2>
-        <div class="et_cards d-flex">
-            <div class="et_card">
-                <img src="./assets/img/car_icon.png" alt="">
-                <p>We have experience with complex schedules</p>
-            </div>
-            <div class="et_card">
-                <img src="./assets/img/car_icon.png" alt="">
-                <p>Executive Transportation</p>
-            </div>
-            <div class="et_card">
-                <img src="./assets/img/car_icon.png" alt="">
-                <p>Transfers / Limousine Service</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="get_cars">
-    <div class="container">
-        <h2>Get to know our cars</h2>
-        <div class="d-flex">
-            <div>
-                <img src="./assets/img/img-carro.png" alt="">
-                <div class="text-center gc_seat">
-                    <h4>Mercedes V300D Long 4MATIC</h4>
+        <section id="home">
+            <div class="container">
+                <div class="home_text">
+                    <h1>Travel in luxury and comfort</h1>
                     <p>
-                        <img class="pb-2" src="./assets/img/seat_icon.png" alt="" height="40px">
-                        7 leather seats
+                        Enjoy an exceptional trip with your own private driver.
                     </p>
                 </div>
-            </div>
-            <div class="gc_icon_photos">
-                <div>
-                    <img src="./assets/img/get_cars01.png" alt="Foto 1" data-bs-toggle="modal" data-bs-target="#modal1">
-                </div>
-                <div>
-                    <img src="./assets/img/get_cars02.png" alt="Foto 2" data-bs-toggle="modal" data-bs-target="#modal2">
-                </div>
-                <div>
-                    <img src="./assets/img/get_cars03.png" alt="Foto 3" data-bs-toggle="modal" data-bs-target="#modal3">
-                </div>
-                <div>
-                    <img src="./assets/img/get_cars04.png" alt="Foto 4" data-bs-toggle="modal" data-bs-target="#modal4">
+                <div class="home_button d-grid">
+                    <a href=""><button>Contact</button></a>
+                    <a id="icon_home" class="pt-4" href=""
+                        ><img src="./assets/img/icon_bottom.png" alt=""
+                    /></a>
                 </div>
             </div>
-        </div>
-        <div id="gc_footer" class="row text-center">
-            <div class="col-sm-3 col-6">
-                <div>
-                    <img src="./assets/img/car_card01.png" alt="">
-                </div>
-            </div>
-            <div class="col-sm-3 col-6">
-                <div>
-                    <img src="./assets/img/car_card02.png" alt="">
-                </div>
-            </div>
-            <div class="col-sm-3 col-6">
-                <div>
-                    <img src="./assets/img/car_card03.png" alt="">
-                </div>
-            </div>
-            <div class="col-sm-3 col-6">
-                <div>
-                    <img src="./assets/img/car_card04.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+        </section>
 
-<!-- Modais -->
-<div class="modal fade" id="modal1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Foto 1</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <img src="./assets/img/modal_cars01.jpg" class="img-fluid" alt="Foto 1">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="modal2">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Foto 2</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <img src="./assets/img/modal_cars02.jpg" class="img-fluid" alt="Foto 2">
-            </div>
-        </div>
-    </div>
-</div>
-
-  <div class="modal fade" id="modal3">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Foto 3</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-            <img src="./assets/img/modal_cars03.jpg" class="img-fluid" alt="Foto 3">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modal4">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Foto 4</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-            <img src="./assets/img/modal_cars04.jpg" class="img-fluid" alt="Foto 4">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="cars">
-    <div class="container">
-        <h2>See our cars fleet</h2>
-        <img src="./assets/img/car01.png" alt="" width="300px">
-    </div>
-</section>
-
-<section id="multilingual_drivers">
-    <div class="text-center">
-        <h3>Multilingual Drivers</h3>
-        <p>Having a multilingual driver eliminates communication barriers.</p>
-        <div class="d-flex md_cards">
-            <div class="md_card">
-                <img src="./assets/img/b1.png" alt="">
-                <p>English</p>
-            </div>
-            <div class="md_card">
-                <img src="./assets/img/b2.png" alt="">
-                <p>Spanish</p>
-            </div>
-            <div class="md_card">
-                <img src="./assets/img/b3.png" alt="">
-                <p>Portuguese</p>
-            </div>
-            <div class="md_card">
-                <img src="./assets/img/b4.png" alt="">
-                <p>French</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="contact_grid">
-        <h2>Get in touch</h2>
-        <div class="d-flex contact_forms">
-            <div class="contact_forms_a">
-                <label for="fname">Name:</label>
-                    <input type="text" id="fname" name="fname">
-                <label for="fuppoint">Pick up point:</label>
-                    <input type="text" id="fuppoint" name="fuppoint">
-                <label for="fdate">Date and time at the pick up point point:</label>
-                    <input type="text" id="fdate" name="fdate">
-            </div>
-            <div class="contact_forms_b">
-                <div class="contact_forms_c d-flex">
-                    <div>
-                        <label for="femail">Email:</label>
-                            <input type="email" id="femail" name="femail">
+        <section id="executive_transportation">
+            <div class="text-center">
+                <h2>Executive Transportation Services in Switzerland</h2>
+                <div class="et_cards d-flex">
+                    <div class="et_card">
+                        <img src="./assets/img/car_icon.png" alt="" />
+                        <p>We have experience with complex schedules</p>
                     </div>
-                    <div>
-                        <label for="fwapp">Whatsapp:</label>
-                            <input type="text" id="fwapp" name="fwapp">
+                    <div class="et_card">
+                        <img src="./assets/img/car_icon.png" alt="" />
+                        <p>Executive Transportation</p>
+                    </div>
+                    <div class="et_card">
+                        <img src="./assets/img/car_icon.png" alt="" />
+                        <p>Transfers / Limousine Service</p>
                     </div>
                 </div>
-                <label for="fdpoint">Destination point:</label>
-                    <input type="text" id="fdpoint" name="fdpoint">
-                <label for="fmsn">Message:</label>
-                    <input type="text" id="fmsn" name="fmsn">
             </div>
-        </div>
-        <div class="text-center">
-            <button>Send</button>
-        </div>
-    </div>
-</section>
+        </section>
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-3">
-                <img src="./assets/img/logo.png" alt="" width="80%">
-            </div>
-            <div class="col-12 col-md-3">
-                <h2>Navigation Bar</h2>
-                <nav class="navbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Home</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="">Services</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="">Cars</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="">Multolingual Drivers</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="">Privacy Policy</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-12 col-md-3 footer_contact">
-                <h2>Contact</h2>
+        <section id="get_cars">
+            <div class="container">
+                <h2>Get to know our cars</h2>
                 <div class="d-flex">
-                    <img src="./assets/img/icon_tel.png" alt="" width="25px" height="25px">
-                    <p>+41774061883</p>
+                    <div>
+                        <img src="./assets/img/img-carro.png" alt="" />
+                        <div class="text-center gc_seat">
+                            <h4>Mercedes V300D Long 4MATIC</h4>
+                            <p>
+                                <img
+                                    class="pb-2"
+                                    src="./assets/img/seat_icon.png"
+                                    alt=""
+                                    height="40px"
+                                />
+                                7 leather seats
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gc_icon_photos">
+                        <div>
+                            <img
+                                src="./assets/img/get_cars01.png"
+                                alt="Foto 1"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modal1"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./assets/img/get_cars02.png"
+                                alt="Foto 2"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modal2"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./assets/img/get_cars03.png"
+                                alt="Foto 3"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modal3"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./assets/img/get_cars04.png"
+                                alt="Foto 4"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modal4"
+                            />
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex">
-                    <img src="./assets/img/icon_email.png" alt="" width="25px" height="25px">
-                    <p>info@besttransfers.ch</p>
+                <div id="gc_footer" class="row text-center">
+                    <div class="col-sm-3 col-6">
+                        <div>
+                            <img src="./assets/img/car_card01.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div>
+                            <img src="./assets/img/car_card02.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div>
+                            <img src="./assets/img/car_card03.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div>
+                            <img src="./assets/img/car_card04.png" alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 footer_social">
-                <h2>Social network</h2>
-                <div class="d-flex">
-                    <img src="./assets/img/icon_instagram.png" alt="">
-                    <img src="./assets/img/icon_whats.png" alt="">
-                    <img src="./assets/img/icon_face.png" alt="">
-                    <img src="./assets/img/icon_twitter.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 
+            <!-- Modais -->
+            <div class="modal fade" id="modal1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Foto 1</h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <img
+                                src="./assets/img/modal_cars01.jpg"
+                                class="img-fluid"
+                                alt="Foto 1"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal2">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Foto 2</h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <img
+                                src="./assets/img/modal_cars02.jpg"
+                                class="img-fluid"
+                                alt="Foto 2"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal3">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Foto 3</h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <img
+                                src="./assets/img/modal_cars03.jpg"
+                                class="img-fluid"
+                                alt="Foto 3"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal4">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Foto 4</h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <img
+                                src="./assets/img/modal_cars04.jpg"
+                                class="img-fluid"
+                                alt="Foto 4"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cars">
+            <div class="container">
+                <h2>See our cars fleet</h2>
+                <img src="./assets/img/car01.png" alt="" width="300px" />
+            </div>
+        </section>
+
+        <section id="multilingual_drivers">
+            <div class="text-center">
+                <h3>Multilingual Drivers</h3>
+                <p>
+                    Having a multilingual driver eliminates communication
+                    barriers.
+                </p>
+                <div class="d-flex md_cards">
+                    <div class="md_card">
+                        <img src="./assets/img/en-flag.png" alt="" />
+                        <p>English</p>
+                    </div>
+                    <div class="md_card">
+                        <img src="./assets/img/es-flag.png" alt="" />
+                        <p>Spanish</p>
+                    </div>
+                    <div class="md_card">
+                        <img src="./assets/img/pt-flag.png" alt="" />
+                        <p>Portuguese</p>
+                    </div>
+                    <div class="md_card">
+                        <img src="./assets/img/fr-flag.png" alt="" />
+                        <p>French</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact_grid">
+                <h2>Get in touch</h2>
+                <form
+                    id="contact-form"
+                    action="send-email.php"
+                    name="contact-form"
+                    method="post"
+                >
+                    <div class="d-flex contact_forms">
+                        <div class="contact_forms_a">
+                            <label for="fname">Name:</label>
+                            <input type="text" id="fname" name="fname" />
+                            <label for="fuppoint">Pick up point:</label>
+                            <input type="text" id="fuppoint" name="fuppoint" />
+                            <label for="fdate"
+                                >Date and time at the pick up point
+                                point:</label
+                            >
+                            <input type="text" id="fdate" name="fdate" />
+                        </div>
+                        <div class="contact_forms_b">
+                            <div class="contact_forms_c d-flex">
+                                <div>
+                                    <label for="femail">Email:</label>
+                                    <input
+                                        type="email"
+                                        id="femail"
+                                        name="femail"
+                                    />
+                                </div>
+                                <div>
+                                    <label for="fwapp">Whatsapp:</label>
+                                    <input
+                                        type="text"
+                                        id="fwapp"
+                                        name="fwapp"
+                                    />
+                                </div>
+                            </div>
+                            <label for="fdpoint">Destination point:</label>
+                            <input type="text" id="fdpoint" name="fdpoint" />
+                            <label for="fmsn">Message:</label>
+                            <input type="text" id="fmsn" name="fmsn" />
+                        </div>
+                    </div>
+                </form>
+                <div class="text-center">
+                    <button>Send</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <img src="./assets/img/logo.png" alt="" width="80%" />
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <h2>Navigation Bar</h2>
+                        <nav class="navbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Home</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="">Services</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="">Cars</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href=""
+                                        >Multolingual Drivers</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="nav-link" href=""
+                                        >Privacy Policy</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-md-3 footer_contact">
+                        <h2>Contact</h2>
+                        <div class="d-flex">
+                            <img
+                                src="./assets/img/icon_tel.png"
+                                alt=""
+                                width="25px"
+                                height="25px"
+                            />
+                            <p>+41774061883</p>
+                        </div>
+                        <div class="d-flex">
+                            <img
+                                src="./assets/img/icon_email.png"
+                                alt=""
+                                width="25px"
+                                height="25px"
+                            />
+                            <p>info@besttransfers.ch</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 footer_social">
+                        <h2>Social network</h2>
+                        <div class="d-flex">
+                            <img src="./assets/img/icon_instagram.png" alt="" />
+                            <img src="./assets/img/icon_whats.png" alt="" />
+                            <img src="./assets/img/icon_face.png" alt="" />
+                            <img src="./assets/img/icon_twitter.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
     <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/translate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.2/umd/popper.min.js"></script>
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
