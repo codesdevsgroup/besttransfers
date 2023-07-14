@@ -2,17 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
             rel="stylesheet"
         />
 
@@ -26,7 +24,6 @@
             defer
             src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
         ></script>
-        <script src="./assets/js/alpine.js"></script>
 
         <link rel="stylesheet" href="./assets/css/carousel.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
@@ -379,18 +376,29 @@
         <section id="cars">
             <div class="container">
                 <h2>See our cars fleet</h2>
-                <img src="./assets/img/car01.png" alt="" class="img-fluid" />
+                <div class="cars_wrapper">
+                    <img
+                        src="./assets/img/car01.png"
+                        alt=""
+                        class="img-fluid"
+                    />
+                    <img
+                        src="./assets/img/car02.png"
+                        alt=""
+                        class="img-fluid"
+                    />
+                </div>
             </div>
         </section>
 
         <section id="multilingual_drivers">
-            <div class="text-center">
-                <h3>Multilingual Drivers</h3>
-                <p>
+            <div class="container">
+                <h3 class="text-center">Multilingual Drivers</h3>
+                <p class="text-center">
                     Having a multilingual driver eliminates communication
                     barriers.
                 </p>
-                <div class="d-flex md_cards">
+                <div class="md_cards">
                     <div class="md_card">
                         <img src="./assets/img/en-flag.png" alt="" />
                         <p>English</p>
@@ -420,47 +428,46 @@
                     name="contact-form"
                     method="post"
                 >
-                    <div class="d-flex contact_forms">
-                        <div class="contact_forms_a">
-                            <label for="fname">Name:</label>
-                            <input type="text" id="fname" name="fname" />
-                            <label for="fuppoint">Pick up point:</label>
-                            <input type="text" id="fuppoint" name="fuppoint" />
-                            <label for="fdate"
-                                >Date and time at the pick up point
-                                point:</label
-                            >
-                            <input type="text" id="fdate" name="fdate" />
+                    <div class="row">
+                        <div class="col-6 form-field">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" />
                         </div>
-                        <div class="contact_forms_b">
-                            <div class="contact_forms_c d-flex">
-                                <div>
-                                    <label for="femail">Email:</label>
-                                    <input
-                                        type="email"
-                                        id="femail"
-                                        name="femail"
-                                    />
-                                </div>
-                                <div>
-                                    <label for="fwapp">Whatsapp:</label>
-                                    <input
-                                        type="text"
-                                        id="fwapp"
-                                        name="fwapp"
-                                    />
-                                </div>
-                            </div>
-                            <label for="fdpoint">Destination point:</label>
-                            <input type="text" id="fdpoint" name="fdpoint" />
-                            <label for="fmsn">Message:</label>
-                            <input type="text" id="fmsn" name="fmsn" />
+                        <div class="col-3 form-field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" />
+                        </div>
+                        <div class="col-3 form-field">
+                            <label for="phone">Whatsapp</label>
+                            <input type="text" name="phone" />
+                        </div>
+                        <div class="col-6 form-field">
+                            <label for="start">Pick up point</label>
+                            <input type="text" name="start" />
+                        </div>
+                        <div class="col-6 form-field">
+                            <label for="end">Destination point</label>
+                            <input type="text" name="end" />
+                        </div>
+                        <div class="col-6 form-field">
+                            <label for="date"
+                                >Date and time at the pick up point</label
+                            >
+                            <input type="text" name="date" />
+                        </div>
+                        <div class="col-6 form-field">
+                            <label for="message">Message</label>
+                            <textarea
+                                name="message"
+                                cols="30"
+                                rows="7"
+                            ></textarea>
                         </div>
                     </div>
+                    <div class="text-center">
+                        <button class="btn-white" type="submit">Send</button>
+                    </div>
                 </form>
-                <div class="text-center">
-                    <button>Send</button>
-                </div>
             </div>
         </section>
 

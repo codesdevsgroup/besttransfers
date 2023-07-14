@@ -7,18 +7,26 @@ function sendContactForm()
 {
   $name = $_POST['name'];
   $email = $_POST['email'];
+  $phone = $_POST['phone'];
+  $start = $_POST['start'];
+  $end = $_POST['end'];
+  $date = $_POST['date'];
   $message = $_POST['message'];
 
   $arquivo = "
     <html>
-      <div><span>Nome:$name</span></div>
+      <div><span>Name: $name</span></div>
+      <div><span>Whatshapp: $phone</span></div>
+      <div><span>Pick up point: $start</span></div>
+      <div><span>Destination point: $end</span></div>
+      <div><span>Date and time at the pick up point: $date</span></div>
       <div></div><span>E-mail:<b>$email</b></span></div>
-      <div><span>Mensagem:$message</span></div>
+      <div><span>Message: $message</span></div>
     </html>
   ";
 
-  $destino = "bp.energy@byd.com";
-  $assunto = "Contato pelo Footer do Website";
+  $destino = "codesdevs@gmail.com";
+  $assunto = "Get in touch";
 
   $headers  = 'MIME-Version: 1.0' . "\r\n";
   $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
