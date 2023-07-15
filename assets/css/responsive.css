@@ -76,7 +76,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
     /* Home */
     #icon_home {
         display: inline;
@@ -116,7 +116,7 @@
         margin: 0 auto;
     }
     .et_cards {
-        display: grid;
+        display: grid !important;
         float: right;
         width: 345px;
         margin-bottom: px;
@@ -147,9 +147,30 @@
         height: 51px;
     }
 
+    /* Get Cars */
+    
+    #get_cars .get_cars_wrapper{
+        display: grid;
+    }
+    #get_cars .get_cars_wrapper .gc_icon_photos{
+        display: flex;
+        position: relative;
+        margin: 0 auto;
+    }
+    #get_cars .get_cars_wrapper .gc_icon_photos div{
+        padding-inline: 3px;
+    }
 
-
-
+    #gc_footer .img-fluid{
+        margin-bottom: 20px;
+    }
+    #gc_footer .row {
+        margin-left: calc(-3 * var(--bs-gutter-x));
+        margin-right: calc(-3 * var(--bs-gutter-x));
+    }
+    #gc_footer > div{
+        margin-bottom: 30px;
+    }
     #get_cars{
         clear: both;
     }
