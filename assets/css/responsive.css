@@ -98,7 +98,61 @@
         margin-top: 35vh;
         text-align: center;
     }
+    .home_button > a {
+        padding: 20px;
+    }
 
+    /* executive_transportation */
+    #executive_transportation {
+        padding-right: 0;
+        height: 380px;
+    }
+    #executive_transportation h2 {
+        font-family: "Utah", sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        width: 325px;
+        height: 84px;
+        margin: 0 auto;
+    }
+    .et_cards {
+        display: grid;
+        float: right;
+        width: 345px;
+        margin-bottom: px;
+    }
+    .et_cards img {
+        display: none;
+    }
+    .et_card{
+        border-radius: 20px 0px 0px 20px;
+        padding: 0;
+        margin-left: auto;
+    }
+    .et_card p{
+        margin-top: 12px;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .et_card01{
+        width: 336px;
+        height: 51px;
+    }
+    .et_card02{
+        width: 203px;
+        height: 51px;
+    }
+    .et_card03{
+        width: 310px;
+        height: 51px;
+    }
+
+
+
+
+    #get_cars{
+        clear: both;
+    }
     /* Footer */
 
     footer {
