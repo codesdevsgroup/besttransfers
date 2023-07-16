@@ -25,16 +25,16 @@ window.addEventListener('scroll', () => {
 
 
 /* Mensagem previa no formulario de contanto no campo de mensagem */
-var textarea = document.getElementById('contactMenssage');
+var textarea = document.getElementById('contactMenssage')
 
 textarea.addEventListener('focus', function() {
   if (textarea.value === 'Message') {
-    textarea.value = '';
+    textarea.value = ''
   }
-});
+})
 
 textarea.addEventListener('blur', function() {
   if (textarea.value === '') {
-    textarea.value = 'Message';
+    textarea.value = 'Message'
   }
-});
+})
