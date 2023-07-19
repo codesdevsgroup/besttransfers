@@ -1,266 +1,265 @@
 ﻿@media screen and (max-width: 1200px) {
-    /*   navbar mobile */
-    #navigation nav .nav-list,
-    .desktop-button {
-        display: none !important;
-    }
-    .options .desktop {
-        display: none !important;
-    }
-    .mobile-options {
-        display: flex;
-        position: relative;
-    }
-    .mobile-options svg {
-        cursor: pointer;
-    }
-    #navigation .mobile-options svg path {
-        fill: #2d5fff;
-    }
-    #navigation.fixed .mobile-options svg path {
-        fill: white;
-    }
-    .nav-list-mobile {
-        width: 266px;
-        background-color: var(--primary-color);
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -280px;
-        transition: all 0.5s ease;
-        padding: 31px 36px;
-    }
-    .nav-list-mobile.open {
-        right: 0;
-    }
-    .nav-list-mobile-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 17px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        margin-bottom: 38px;
-    }
-    .nav-list-mobile-body .sub-nav-list .open {
-        display: flex !important;
-        flex-direction: column;
-    }
+	/*   navbar mobile */
+	#navigation nav .nav-list,
+	.desktop-button {
+		display: none !important;
+	}
+	.options .desktop {
+		display: none !important;
+	}
+	.mobile-options {
+		display: flex;
+		position: relative;
+	}
+	.mobile-options svg {
+		cursor: pointer;
+	}
+	#navigation .mobile-options svg path {
+		fill: #2d5fff;
+	}
+	#navigation.fixed .mobile-options svg path {
+		fill: white;
+	}
+	.nav-list-mobile {
+		width: 266px;
+		background-color: var(--primary-color);
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: -280px;
+		transition: all 0.5s ease;
+		padding: 31px 36px;
+	}
+	.nav-list-mobile.open {
+		right: 0;
+	}
+	.nav-list-mobile-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 17px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		margin-bottom: 38px;
+	}
+	.nav-list-mobile-body .sub-nav-list .open {
+		display: flex !important;
+		flex-direction: column;
+	}
 
-    #navigation .nav-list-mobile-body li {
-        position: relative;
-    }
+	#navigation .nav-list-mobile-body li {
+		position: relative;
+	}
 
-    #navigation .nav-list-mobile-body > li {
-        margin-bottom: 38px;
-    }
+	#navigation .nav-list-mobile-body > li {
+		margin-bottom: 38px;
+	}
 
-    #navigation .nav-list-mobile-body .sub-nav-list li {
-        margin-top: 20px;
-    }
+	#navigation .nav-list-mobile-body .sub-nav-list li {
+		margin-top: 20px;
+	}
 
-    #navigation .nav-list-mobile-body li::before {
-        content: '';
-        position: absolute;
-        left: -10px;
-        top: 0;
-        width: 3px;
-        height: 24px;
-        background: #00a5df;
-        border-radius: 100px;
-        transition: all 0.4s ease;
-        opacity: 0;
-    }
+	#navigation .nav-list-mobile-body li::before {
+		content: '';
+		position: absolute;
+		left: -10px;
+		top: 0;
+		width: 3px;
+		height: 24px;
+		background: #00a5df;
+		border-radius: 100px;
+		transition: all 0.4s ease;
+		opacity: 0;
+	}
 
-    #navigation .nav-list-mobile-body li:hover::before {
-        opacity: 1;
-    }
+	#navigation .nav-list-mobile-body li:hover::before {
+		opacity: 1;
+	}
 }
 
 @media (max-width: 1200px) {
-    /* Home */
-    #icon_home {
-        display: inline;
-    }
-    .home_text {
-        width: 340px;
-        margin-top: 40px;
-    }
-    .home_text h1 {
-        font-size: 36px;
-    }
-    .home_text p {
-        font-size: 16px;
-    }
-    #home {
-        background-position: center right;
-    }
-    .home_button {
-        margin-top: 35vh;
-        text-align: center;
-    }
-    .home_button > a {
-        padding: 20px;
-    }
+	/* Home */
+	#icon_home {
+		display: inline;
+	}
+	.home_text {
+		width: 340px;
+		margin-top: 40px;
+	}
+	.home_text h1 {
+		font-size: 36px;
+	}
+	.home_text p {
+		font-size: 16px;
+	}
+	#home {
+		background-position: center right;
+	}
+	.home_button {
+		margin-top: 35vh;
+		text-align: center;
+	}
+	.home_button > a {
+		padding: 20px;
+	}
 
-    /* executive_transportation */
-    #executive_transportation {
-        padding-right: 0;
-        height: 380px;
-    }
-    #executive_transportation h2 {
-        font-family: "Utah", sans-serif;
-        font-size: 28px;
-        font-weight: 400;
-        width: 325px;
-        height: 84px;
-        margin: 0 auto;
-    }
-    .et_cards {
-        display: grid !important;
-        float: right;
-        width: 345px;
-        margin-bottom: px;
-    }
-    .et_cards img {
-        display: none;
-    }
-    .et_card{
-        border-radius: 20px 0px 0px 20px;
-        padding: 0;
-        margin-left: auto;
-    }
-    .et_card p{
-        margin-top: 12px;
-        margin-left: 10px;
-        font-size: 16px;
-    }
-    .et_card01{
-        width: 330px;
-        height: 51px;
-    }
-    .et_card02{
-        width: 280px;
-        height: 51px;
-    }
-    .et_card03{
-        width: 226px;
-        height: 51px;
-    }
+	/* executive_transportation */
+	#executive_transportation {
+		padding-right: 0;
+		height: 380px;
+	}
+	#executive_transportation h2 {
+		font-family: "Utah", sans-serif;
+		font-size: 28px;
+		font-weight: 400;
+		width: 325px;
+		height: 84px;
+		margin: 0 auto;
+	}
+	.et_cards {
+		display: grid !important;
+		float: right;
+		width: 345px;
+		margin-bottom: px;
+	}
+	.et_cards img {
+		display: none;
+	}
+	.et_card{
+		border-radius: 20px 0px 0px 20px;
+		padding: 0;
+		margin-left: auto;
+	}
+	.et_card p{
+		margin-top: 12px;
+		margin-left: 10px;
+		font-size: 16px;
+	}
+	.et_card01{
+		width: 330px;
+		height: 51px;
+	}
+	.et_card02{
+		width: 280px;
+		height: 51px;
+	}
+	.et_card03{
+		width: 226px;
+		height: 51px;
+	}
 
-    /* Get Cars */
-    
-    #get_cars{
-        clear: both;
-    }
-    
-    .gc_seat h4 {
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 30px;
-    }
-    .gc_seat p {
-        font-size: 18px;
-    }
-    #get_cars .get_cars_wrapper{
-        display: grid;
-    }
-    #get_cars .get_cars_wrapper .gc_icon_photos{
-        display: flex;
-        position: relative;
-        margin: 0 auto;
-    }
-       
-    #gc_footer .img-fluid{
-        margin-bottom: 20px;
-    }
-    #gc_footer .row {
-        margin-left: calc(-3 * var(--bs-gutter-x));
-        margin-right: calc(-3 * var(--bs-gutter-x));
-    }
-    #gc_footer > div {
-        margin-bottom: 30px;
-    }
-    
-    /* cars */
+	/* Get Cars */
+	
+	#get_cars{
+		clear: both;
+	}
+	
+	.gc_seat h4 {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 30px;
+	}
+	.gc_seat p {
+		font-size: 18px;
+	}
+	#get_cars .get_cars_wrapper{
+		display: grid;
+	}
+	#get_cars .get_cars_wrapper .gc_icon_photos{
+		display: flex;
+		position: relative;
+		margin: 0 auto;
+	}
+			
+	#gc_footer .img-fluid{
+		margin-bottom: 20px;
+	}
+	#gc_footer .row {
+		margin-left: calc(-3 * var(--bs-gutter-x));
+		margin-right: calc(-3 * var(--bs-gutter-x));
+	}
+	#gc_footer > div {
+		margin-bottom: 30px;
+	}
+	
+	/* cars */
 
-    .cars_wrapper {
-        display: grid;
-    }
-    #cars h2 {
-        font-family: "Utah", sans-serif;
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 48px;
-    }
+	.cars_wrapper {
+		display: grid;
+	}
+	#cars h2 {
+		font-family: "Utah", sans-serif;
+		font-size: 32px;
+		font-weight: 500;
+		line-height: 48px;
+	}
 
-    /* multilingual drivers */
+	/* multilingual drivers */
 
-    #multilingual_drivers h3 {
-        font-family: "Utah", sans-serif;
-        font-size: 28px;
-        font-weight: 400;
-        line-height: 34px;
-        letter-spacing: 0em;
-    }
-    #multilingual_drivers > p {
-        font-family: "Lato", sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19px;
-    }
-    #multilingual_drivers{
-        text-align: left;
-    }
+	#multilingual_drivers h3 {
+		font-family: "Utah", sans-serif;
+		font-size: 28px;
+		font-weight: 400;
+		line-height: 34px;
+		letter-spacing: 0em;
+	}
+	#multilingual_drivers > p {
+		font-family: "Lato", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 19px;
+	}
+	#multilingual_drivers{
+		text-align: left;
+	}
 
-    #multilingual_drivers .md_cards {
-        display: grid;
-    }
-    
-    #multilingual_drivers .md_card {
-        display: ruby;
-        width: 330px;
-        height: 52px;
-        border-radius: 32px;
-        padding: 10px 3px;
-    }
+	#multilingual_drivers .md_cards {
+		display: grid;
+	}
+	
+	#multilingual_drivers .md_card {
+		display: ruby;
+		width: 330px;
+		height: 52px;
+		border-radius: 32px;
+		padding: 10px 3px;
+	}
 
-    .md_card img {
-        padding-bottom: 0;
-        padding-top: 0;
-        padding-left: 15px;
-        
-    }
-    .md_card p{
-        margin-left: 15px;
-    }
+	.md_card img {
+		padding-bottom: 0;
+		padding-top: 0;
+		padding-left: 15px;	
+	}
+	.md_card p{
+		margin-left: 15px;
+	}
 
-    #multilingual_drivers {
-        margin-bottom: 0px;
-      }
+	#multilingual_drivers {
+		margin-bottom: 0px;
+	}
 
-    /* contact */
-    #contact .contact_grid {
-        padding: 70px 15px;
-        margin: auto;
-        width: 100vw;
-        border-radius: 0;
-        background: none;
-    }
-    #contact label,
-    #contact .contact_grid h2 {
-        color: rgba(63, 63, 63, 1);
-        text-align: left;
-    }
-    #contact .contact_grid input {
-        color: rgba(63, 63, 63, 1);
-    }
-    textarea {
-        color: rgba(63, 63, 63, 1) !important;
-    }
+	/* contact */
+	#contact .contact_grid {
+		padding: 70px 15px;
+		margin: auto;
+		width: 100vw;
+		border-radius: 0;
+		background: none;
+	}
+	#contact label,
+	#contact .contact_grid h2 {
+		color: rgba(63, 63, 63, 1);
+		text-align: left;
+	}
+	#contact .contact_grid input {
+		color: rgba(63, 63, 63, 1);
+	}
+	textarea {
+		color: rgba(63, 63, 63, 1) !important;
+	}
 
-    /* Footer */
+	/* Footer */
 
-    footer {
-        height: 620px;
-    }
+	footer {
+		height: 620px;
+	}
 }
