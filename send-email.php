@@ -8,15 +8,15 @@ $date = $_POST['date'];
 $message = $_POST['message'];
 
 $arquivo = "
-    <html>
-      <div><span>Name: $name</span></div>
-      <div><span>Whatshapp: $phone</span></div>
-      <div><span>Pick up point: $start</span></div>
-      <div><span>Destination point: $end</span></div>
-      <div><span>Date and time at the pick up point: $date</span></div>
-      <div></div><span>E-mail:<b>$email</b></span></div>
-      <div><span>Message: $message</span></div>
-    </html>
+  <html>
+    <div><span>Name: $name</span></div>
+    <div><span>Whatshapp: $phone</span></div>
+    <div><span>Pick up point: $start</span></div>
+    <div><span>Destination point: $end</span></div>
+    <div><span>Date and time at the pick up point: $date</span></div>
+    <div></div><span>E-mail:<b>$email</b></span></div>
+    <div><span>Message: $message</span></div>
+  </html>
   ";
 
 $destino = "info@besttransfers.com";
