@@ -296,6 +296,10 @@ h2 {
   gap: 15px;
 }
 
+.cars_wrapper img {
+  cursor: pointer;
+}
+
 /* multilingual drivers */
 #multilingual_drivers {
   margin-bottom: 140px;
@@ -420,4 +424,34 @@ footer h2 {
 .footer_social img {
   padding: 4px;
   padding-top: 20px;
+}
+
+.modal.fade .modal-dialog {
+  width: 600px;
+  max-width: 600px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-body > div {
+  gap: 20px;
+}
+
+.modal-body > div img {
+  cursor: pointer;
+  border-radius: 15.294px;
+  border: 2px solid transparent;
+}
+
+.modal-body > div .active {
+  cursor: pointer;
+  border: 2px solid #a30808;
+}
+
+.main-modal-img {
+  margin-bottom: 20px;
 }

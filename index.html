@@ -25,7 +25,6 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
 
-    <link rel="stylesheet" href="./assets/css/carousel.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap-custom.css" />
@@ -185,196 +184,277 @@
         </div>
       </section>
 
-<!-- get cars -->
-
+    <!-- get cars -->
+    <div>
       <section id="get_cars">
         <div class="container-sm-fluid container">
           <h2>Get to know our cars</h2>
-          <div class="get_cars_wrapper">
-            <div>
-              <img src="./assets/img/img-carro.png" alt="" class="img-fluid"/>
-              <div class="text-center gc_seat">
-                <h4>Mercedes V300D Long 4MATIC</h4>
-                <p>
-                  <img
-                    class="pb-2"
-                    src="./assets/img/seat_icon.png"
-                    alt=""
-                    height="40px"
-                  />
-                  7 leather seats
-                </p>
-              </div>
-            </div>
-
-            <div class="gc_icon_photos_container">
-              <div class="gc_icon_photos">
-                <div>
-                  <img
-                    src="./assets/img/get_cars01.png"
-                    alt="Foto 1"
-                    data-bs-toggle="modal"
-                    data-bs-target="#modal1"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="./assets/img/get_cars02.png"
-                    alt="Foto 2"
-                    data-bs-toggle="modal"
-                    data-bs-target="#modal2"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="./assets/img/get_cars03.png"
-                    alt="Foto 3"
-                    data-bs-toggle="modal"
-                    data-bs-target="#modal3"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="./assets/img/get_cars04.png"
-                    alt="Foto 4"
-                    data-bs-toggle="modal"
-                    data-bs-target="#modal4"
-                  />
+          <div class="car-v300D">
+            <div class="get_cars_wrapper">
+              <div>
+                <img src="./assets/img/cars/v300D/img-car-v300D.png" alt="" class="img-fluid"/>
+                <div class="text-center gc_seat">
+                  <h4>Mercedes V300D Long 4MATIC</h4>
+                  <div class="d-flex justify-content-center">
+                    <img
+                      class="pb-2 me-3"
+                      src="./assets/img/seat_icon.png"
+                      alt=""
+                      height="40px"
+                    />
+                    <p>7 leather seats</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div id="gc_footer" class="text-center">
-            <div class="container">
-              <div class="row">
-                <div class="col-6 col-md-3">
-                  <img src="./assets/img/car_card01.png" class="img-fluid" alt=""/>
+  
+              <div class="gc_icon_photos_container" >
+                <div class="gc_icon_photos">
+                  <div>
+                    <img
+                      src="./assets/img/cars/v300D/carousel_cars01.png"
+                      class="img-carousel car-01"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal1"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/img/cars/v300D/carousel_cars02.png"
+                      class="img-carousel car-02"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal1"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/img/cars/v300D/carousel_cars03.png"
+                      class="img-carousel car-03"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal1"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/img/cars/v300D/carousel_cars04.png"
+                      class="img-carousel car-04"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal1"
+                    />
+                  </div>
                 </div>
-                <div class="col-6 col-md-3">
-                  <img src="./assets/img/car_card02.png" class="img-fluid" alt=""/>
-                </div>
-                <div class="col-6 col-md-3">
-                  <img src="./assets/img/car_card03.png" class="img-fluid" alt=""/>
-                </div>
-                <div class="col-6 col-md-3">
-                  <img src="./assets/img/car_card04.png" class="img-fluid" alt=""/>
+                <div class="modal fade" id="modal1">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="./assets/img/cars/v300D/modal_cars01.jpg"
+                          class="img-fluid main-modal-img"
+                          alt=""
+                        />
+                        <div class="d-flex">
+                          <img 
+                            src="./assets/img/cars/v300D/carousel_cars01.png" 
+                            alt=""
+                            class="img-carousel img-carousel-modal car-01 active"
+                          >
+                          <img 
+                            src="./assets/img/cars/v300D/carousel_cars02.png" 
+                            alt=""
+                            class="img-carousel img-carousel-modal car-02"
+                          >
+                          <img 
+                            src="./assets/img/cars/v300D/carousel_cars03.png" 
+                            alt=""
+                            class="img-carousel img-carousel-modal car-03"
+                          >
+                          <img 
+                            src="./assets/img/cars/v300D/carousel_cars04.png" 
+                            alt=""
+                            class="img-carousel img-carousel-modal car-04"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <a href="" class="button"><button>Contact</button></a>
+            </div>
+            <div id="gc_footer" class="text-center">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6 col-md-3">
+                    <img src="./assets/img/cars/v300D/card01.png" class="img-fluid" alt=""/>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <img src="./assets/img/cars/v300D/card02.png" class="img-fluid" alt=""/>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <img src="./assets/img/cars/v300D/card03.png" class="img-fluid" alt=""/>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <img src="./assets/img/cars/v300D/card04.png" class="img-fluid" alt=""/>
+                  </div>
+                </div>
+                <a href="" class="button"><button>Contact</button></a>
+              </div>
             </div>
           </div>
-      </div>
 
-    <!-- Modais -->
-
-      <div class="modal fade" id="modal1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Foto 1</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-              ></button>
+          <div class="car-cla200 d-none">
+            <div class="get_cars_wrapper">
+              <div>
+                <img src="./assets/img/cars/cla200/img-car-cla200.png" alt="" class="img-fluid"/>
+                <div class="text-center gc_seat">
+                  <h4>Mercedes-Benz CLA 200</h4>
+                  <div class="d-flex justify-content-center">
+                    <img
+                      class="pb-2 me-3"
+                      src="./assets/img/seat_icon.png"
+                      alt=""
+                      height="40px"
+                    />
+                    <p>5 seats</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="gc_icon_photos_container" >
+                <div class="gc_icon_photos">
+                  <div>
+                    <img
+                      src="./assets/img/cars/cla200/carousel_cars01.png"
+                      class="img-carousel car-01"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal2"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/img/cars/cla200/carousel_cars02.png"
+                      class="img-carousel car-02"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal2"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/img/cars/cla200/carousel_cars03.png"
+                      class="img-carousel car-03"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal2"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/img/cars/cla200/carousel_cars04.png"
+                      class="img-carousel car-04"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal2"
+                    />
+                  </div>
+                </div>
+                <div class="modal fade" id="modal2">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="./assets/img/cars/cla200/modal_cars01.png"
+                          class="img-fluid main-modal-img"
+                          alt=""
+                        />
+                        <div class="d-flex">
+                          <img 
+                            src="./assets/img/cars/cla200/carousel_cars01.png" 
+                            alt=""
+                            class="img-carousel img-carousel-modal car-01 active"
+                          >
+                          <img 
+                            src="./assets/img/cars/cla200/carousel_cars02.png" 
+                            alt=""
+                            class="img-carousel img-carousel-modal car-02"
+                          >
+                          <img 
+                            src="./assets/img/cars/cla200/carousel_cars03.png" 
+                            alt=""
+                            class="img-carousel img-carousel-modal car-03"
+                          >
+                          <img 
+                            src="./assets/img/cars/cla200/carousel_cars04.png" 
+                            alt=""
+                            class="img-carousel img-carousel-modal car-04"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="modal-body">
+            <div id="gc_footer" class="text-center">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6 col-md-3">
+                    <img src="./assets/img/cars/cla200/card01.png" class="img-fluid" alt=""/>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <img src="./assets/img/cars/cla200/card02.png" class="img-fluid" alt=""/>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <img src="./assets/img/cars/cla200/card03.png" class="img-fluid" alt=""/>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <img src="./assets/img/cars/cla200/card04.png" class="img-fluid" alt=""/>
+                  </div>
+                </div>
+                <a href="" class="button"><button>Contact</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="cars">
+        <div class="container">
+          <h2>See our cars fleet</h2>
+          <div class="cars_container">
+            <div class="cars_wrapper">
               <img
-                src="./assets/img/modal_cars01.jpg"
-                class="img-fluid"
-                alt="Foto 1"
+                src="./assets/img/cars/v300D/car01.png"
+                alt=""
+                class="img-fluid img-car-v300D"
+              />
+              <img
+                src="./assets/img/cars/cla200/car02.png"
+                alt=""
+                class="img-fluid img-car-cla200"
               />
             </div>
           </div>
         </div>
-      </div>
+      </section>
+    </div>
 
-      <div class="modal fade" id="modal2">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Foto 2</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <img
-                src="./assets/img/modal_cars02.jpg"
-                class="img-fluid"
-                alt="Foto 2"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="modal3">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Foto 3</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <img
-                src="./assets/img/modal_cars03.jpg"
-                class="img-fluid"
-                alt="Foto 3"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="modal4">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Foto 4</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <img
-                src="./assets/img/modal_cars04.jpg"
-                class="img-fluid"
-                alt="Foto 4"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="cars">
-      <div class="container">
-        <h2>See our cars fleet</h2>
-        <div class="cars_container">
-          <div class="cars_wrapper">
-            <img
-              src="./assets/img/car01.png"
-              alt=""
-              class="img-fluid"
-            />
-            <img
-              src="./assets/img/car02.png"
-              alt=""
-              class="img-fluid"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section id="multilingual_drivers">
       <div class="container-fluid container-sm">
@@ -527,6 +607,7 @@
   </body>
   <script src="./assets/js/jquery-3.6.1.min.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/cars.js"></script>
   <script src="./assets/js/translate.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.2/umd/popper.min.js"></script>
   <script
