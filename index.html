@@ -31,158 +31,158 @@
 
     <title>BESTTRANSFERS</title>
   </head>
-    <body>
-      <header id="navigation">
-        <nav class="d-flex container justify-content-between align-items-center position-relative">
-          <a href="#home">
-            <img src="assets/img/logo.png" alt="logo codes devs" class="img-fluid logo" />
-          </a>
-          <ul class="d-flex nav-list mar-e-5">
-            <li>
-              <a href="#home" class="active home">Home</a>
-            </li>
-            <li>
-              <a href="#executive_transportation" class="services">Services</a>
-            </li>
-            <li>
-              <a href="#cars" class="cars">Cars</a>
-            </li>
-            <li>
-              <a href="#contact" class="contact">Contact</a>
-            </li>
-          </ul>
-          <div class="options d-flex align-items-center">
-            <div
-              class="select-lang d-flex align-items-center position-relative"
-            >
-            <img
-              id="en-flag"
-              class="flag d-none"
-              src="assets/img/en-flag.png"
-              alt="bandeira inglesa"
+  <body>
+    <header id="navigation">
+      <nav class="d-flex container justify-content-between align-items-center position-relative">
+        <a href="#home">
+          <img src="assets/img/logo.png" alt="logo codes devs" class="img-fluid logo" />
+        </a>
+        <ul class="d-flex nav-list mar-e-5">
+          <li>
+            <a href="#home" class="active home">Home</a>
+          </li>
+          <li>
+            <a href="#executive_transportation" class="services">Services</a>
+          </li>
+          <li>
+            <a href="#cars" class="cars">Cars</a>
+          </li>
+          <li>
+            <a href="#contact" class="contact">Contact</a>
+          </li>
+        </ul>
+        <div class="options d-flex align-items-center">
+          <div
+            class="select-lang d-flex align-items-center position-relative"
+          >
+          <img
+            id="en-flag"
+            class="flag d-none"
+            src="assets/img/en-flag.png"
+            alt="bandeira inglesa"
+          />
+          <img
+            id="pt-flag"
+            class="flag d-none"
+            src="assets/img/pt-flag.png"
+            alt="bandeira brasileira"
+          />
+          <img
+            id="es-flag"
+            class="flag d-none"
+            src="assets/img/es-flag.png"
+            alt="bandeira Espanhola"
+          />
+          <img
+            id="fr-flag"
+            class="flag d-none"
+            src="assets/img/fr-flag.png"
+            alt="bandeira Francesa"
+          />
+          <select
+            name="lang"
+              class="form-select"
+              onchange="executeTranslation(event)"
+          >
+            <option value="en">En</option>
+            <option value="pt">Pt</option>
+            <option value="es">Es</option>
+            <option value="fr">Fr</option>
+          </select>
+        </div>
+        <div class="mobile-options" x-data="{ open: false }">
+          <svg
+            x-on:click="open = true"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M2.25 7C2.25 6.58579 2.58579 6.25 3 6.25H21C21.4142 6.25 21.75 6.58579 21.75 7C21.75 7.41421 21.4142 7.75 21 7.75H3C2.58579 7.75 2.25 7.41421 2.25 7ZM6 12C6 11.5858 6.33579 11.25 6.75 11.25H21C21.4142 11.25 21.75 11.5858 21.75 12C21.75 12.4142 21.4142 12.75 21 12.75H6.75C6.33579 12.75 6 12.4142 6 12ZM2.25 17C2.25 16.5858 2.58579 16.25 3 16.25H21C21.4142 16.25 21.75 16.5858 21.75 17C21.75 17.4142 21.4142 17.75 21 17.75H3C2.58579 17.75 2.25 17.4142 2.25 17Z"
+              fill="white"
             />
-            <img
-              id="pt-flag"
-              class="flag d-none"
-              src="assets/img/pt-flag.png"
-              alt="bandeira brasileira"
-            />
-            <img
-              id="es-flag"
-              class="flag d-none"
-              src="assets/img/es-flag.png"
-              alt="bandeira Espanhola"
-            />
-            <img
-              id="fr-flag"
-              class="flag d-none"
-              src="assets/img/fr-flag.png"
-              alt="bandeira Francesa"
-            />
-            <select
-              name="lang"
-                class="form-select"
-                onchange="executeTranslation(event)"
-            >
-              <option value="en">En</option>
-              <option value="pt">Pt</option>
-              <option value="es">Es</option>
-              <option value="fr">Fr</option>
-            </select>
-          </div>
-          <div class="mobile-options" x-data="{ open: false }">
-            <svg
-              x-on:click="open = true"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M2.25 7C2.25 6.58579 2.58579 6.25 3 6.25H21C21.4142 6.25 21.75 6.58579 21.75 7C21.75 7.41421 21.4142 7.75 21 7.75H3C2.58579 7.75 2.25 7.41421 2.25 7ZM6 12C6 11.5858 6.33579 11.25 6.75 11.25H21C21.4142 11.25 21.75 11.5858 21.75 12C21.75 12.4142 21.4142 12.75 21 12.75H6.75C6.33579 12.75 6 12.4142 6 12ZM2.25 17C2.25 16.5858 2.58579 16.25 3 16.25H21C21.4142 16.25 21.75 16.5858 21.75 17C21.75 17.4142 21.4142 17.75 21 17.75H3C2.58579 17.75 2.25 17.4142 2.25 17Z"
-                fill="white"
-              />
-            </svg>
-            <div class="nav-list-mobile" :class="{'open': open}">
-              <div class="nav-list-mobile-header">
-                <svg
-                  x-on:click="open = false"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 15.7431L15.7431 1M15.7431 15.7431L1 1"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <ul class="d-flex flex-column nav-list-mobile-body">
-                <li>
-                  <a href="#home" class="active home">Home</a>
-                </li>
-                <li>
-                  <a href="#executive_transportation"class="services">Services</a>
-                </li>
-                <li>
-                  <a href="#cars" class="cars">Cars</a>
-                </li>
-                <li>
-                  <a href="#contact" class="contact">Contact</a>
-                </li>
-              </ul>
+          </svg>
+          <div class="nav-list-mobile" :class="{'open': open}">
+            <div class="nav-list-mobile-header">
+              <svg
+                x-on:click="open = false"
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 15.7431L15.7431 1M15.7431 15.7431L1 1"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
+            <ul class="d-flex flex-column nav-list-mobile-body">
+              <li>
+                <a href="#home" class="active home">Home</a>
+              </li>
+              <li>
+                <a href="#executive_transportation" class="services">Services</a>
+              </li>
+              <li>
+                <a href="#cars" class="cars">Cars</a>
+              </li>
+              <li>
+                <a href="#contact" class="contact">Contact</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
 <!-- Home -->
 
-      <section id="home">
-        <div class="container">
-          <div class="home_text">
-            <h1>Travel in luxury and comfort</h1>
-            <p>
-              Enjoy an exceptional trip with your <br />
-              own private driver.
-            </p>
-          </div>
-          <div class="home_button">
-            <a href="" class="button"><button>Contact</button></a>
-            <a id="icon_home" href=""><img src="./assets/img/icon_bottom.png" alt=""/></a>
-          </div>
+    <section id="home">
+      <div class="container">
+        <div class="home_text">
+          <h1>Travel in luxury and comfort</h1>
+          <p>
+            Enjoy an exceptional trip with your <br />
+            own private driver.
+          </p>
         </div>
-      </section>
+        <div class="home_button">
+          <a href="" class="button"><button>Contact</button></a>
+          <a id="icon_home" href=""><img src="./assets/img/icon_bottom.png" alt=""/></a>
+        </div>
+      </div>
+    </section>
 
 <!-- executive transportation -->
 
-      <section id="executive_transportation" class="container-sm">
-        <h2 class="text-sm-center">
-          Executive Transportation Services in Switzerland
-        </h2>
-        <div class="et_cards text-sm-center d-grid d-sm-flex">
-          <div class="et_card et_card01">
-            <img src="./assets/img/car_icon.png" alt="" />
-            <p>We have experience with complex schedules</p>
-          </div>
-          <div class="et_card et_card02">
-            <img src="./assets/img/car_icon.png" alt="" />
-            <p>Executive Transportation and Events</p>
-          </div>
-          <div class="et_card et_card03">
-            <img src="./assets/img/car_icon.png" alt="" />
-            <p>Transfers / Limousine Service</p>
-          </div>
+    <section id="executive_transportation" class="container-sm">
+      <h2 class="text-sm-center">
+        Executive Transportation Services in Switzerland
+      </h2>
+      <div class="et_cards text-sm-center d-grid d-sm-flex">
+        <div class="et_card et_card01">
+          <img src="./assets/img/car_icon.png" alt="" />
+          <p>We have experience with complex schedules</p>
         </div>
-      </section>
+        <div class="et_card et_card02">
+          <img src="./assets/img/car_icon.png" alt="" />
+          <p>Executive Transportation and Events</p>
+        </div>
+        <div class="et_card et_card03">
+          <img src="./assets/img/car_icon.png" alt="" />
+          <p>Transfers / Limousine Service</p>
+        </div>
+      </div>
+    </section>
 
     <!-- get cars -->
     <div>
@@ -604,16 +604,17 @@
         </div>
       </div>
     </footer>
+    
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/cars.js"></script>
+    <script src="./assets/js/translate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.2/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script src="./assets/js/jquery-3.6.1.min.js"></script>
-  <script src="./assets/js/main.js"></script>
-  <script src="./assets/js/cars.js"></script>
-  <script src="./assets/js/translate.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.2/umd/popper.min.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"
-  ></script>
 
 </html>
