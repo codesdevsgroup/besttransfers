@@ -14,16 +14,16 @@ $(document).ready(function () {
     let newSrc = ''
     $('.img-carousel').removeClass('active')
     if ($(this).hasClass('car-01')) {
-      newSrc = './assets/img/cars/v300D/modal_cars01.png'
+      newSrc = './assets/img/cars/v300D/modal_cars01.webp'
       $('.car-v300D .modal .img-carousel.car-01').addClass('active')
     } else if ($(this).hasClass('car-02')) {
-      newSrc = './assets/img/cars/v300D/modal_cars02.png'
+      newSrc = './assets/img/cars/v300D/modal_cars02.webp'
       $('.car-v300D .modal .img-carousel.car-02').addClass('active')
     } else if ($(this).hasClass('car-03')) {
-      newSrc = './assets/img/cars/v300D/modal_cars03.png'
+      newSrc = './assets/img/cars/v300D/modal_cars03.webp'
       $('.car-v300D .modal .img-carousel.car-03').addClass('active')
     } else {
-      newSrc = './assets/img/cars/v300D/modal_cars04.png'
+      newSrc = './assets/img/cars/v300D/modal_cars04.webp'
       $('.car-v300D .modal .img-carousel.car-04').addClass('active')
     }
     $('.car-v300D .main-modal-img').attr('src', newSrc)
@@ -32,16 +32,16 @@ $(document).ready(function () {
     let newSrc = ''
     $('.img-carousel').removeClass('active')
     if ($(this).hasClass('car-01')) {
-      newSrc = './assets/img/cars/cla200/modal_cars01.png'
+      newSrc = './assets/img/cars/cla200/modal_cars01.webp'
       $('.car-cla200 .modal .img-carousel.car-01').addClass('active')
     } else if ($(this).hasClass('car-02')) {
-      newSrc = './assets/img/cars/cla200/modal_cars02.png'
+      newSrc = './assets/img/cars/cla200/modal_cars02.webp'
       $('.car-cla200 .modal .img-carousel.car-02').addClass('active')
     } else if ($(this).hasClass('car-03')) {
-      newSrc = './assets/img/cars/cla200/modal_cars03.png'
+      newSrc = './assets/img/cars/cla200/modal_cars03.webp'
       $('.car-cla200 .modal .img-carousel.car-03').addClass('active')
     } else {
-      newSrc = './assets/img/cars/cla200/modal_cars04.png'
+      newSrc = './assets/img/cars/cla200/modal_cars04.webp'
       $('.car-cla200 .modal .img-carousel.car-04').addClass('active')
     }
     $('.car-cla200 .main-modal-img').attr('src', newSrc)
