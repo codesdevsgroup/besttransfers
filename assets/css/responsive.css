@@ -76,7 +76,6 @@
     display: inline;
   }
   .home_text {
-    width: 340px;
     margin-top: 40px;
   }
   .home_text h1 {
@@ -87,10 +86,35 @@
   }
   #home {
     background-position: center right;
+    background-image: none;
+    align-items: unset;
+  }
+  #home .w-100 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #home .w-100 .texts {
+    width: 364px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+  }
+  #home .d-none {
+    display: flex !important;
+    height: 60vh;
+    width: 50%;
+    justify-content: flex-end;
+    align-self: center;
+  }
+  #home .d-none img {
+    max-height: 100%;
   }
   .home_button {
-    margin-top: 35vh;
     text-align: center;
+  }
+  .home_button .button {
+    margin-top: 0;
   }
   .home_button > a {
     padding: 20px;
@@ -166,16 +190,33 @@
     justify-content: center;
   }
 
-  #gc_footer .container .row > div {
-    width: 25%;
+  #get_cars .card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
-  #gc_footer .img-fluid {
-    margin-bottom: 20px;
+
+  #get_cars .card-wrapper .card-footer {
+    width: 153px;
+    height: 142px;
+    gap: 8px;
   }
-  #gc_footer .row {
-    margin-left: calc(-3 * var(--bs-gutter-x));
-    margin-right: calc(-3 * var(--bs-gutter-x));
+
+  #get_cars .card-wrapper .card-footer h5 {
+    font-size: 16px;
+    font-weight: 400;
   }
+
+  #get_cars .card-wrapper .card-footer:nth-child(1),
+  #get_cars .card-wrapper .card-footer:nth-child(3) {
+    justify-self: end;
+  }
+
+  #get_cars .card-wrapper .card-footer:nth-child(2),
+  #get_cars .card-wrapper .card-footer:nth-child(4) {
+    justify-self: start;
+  }
+
   #gc_footer > div {
     margin-bottom: 30px;
   }
@@ -264,11 +305,42 @@
   /* Footer */
 
   footer {
-    height: 620px;
+    height: auto;
+    padding-bottom: 60px;
   }
 }
 
 @media (max-width: 768px) {
+  #navigation .logo {
+    width: 180px;
+  }
+  .home_text {
+    margin-top: 10px;
+  }
+  .home_button {
+    margin-bottom: 20px;
+  }
+  #home {
+    height: auto;
+  }
+  #home .w-100 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: initial;
+  }
+  #home .w-100 .texts {
+    width: auto;
+    margin-right: auto;
+    display: block;
+  }
+  #home .d-none {
+    height: auto;
+    width: 100%;
+  }
+  #home .d-none img {
+    width: 375px;
+    height: 393px;
+  }
   #cars .container {
     max-width: initial !important;
   }
@@ -313,6 +385,25 @@
   #gc_footer .row > div {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+  .navigation-bar {
+    margin-top: 30px;
+  }
+  footer {
+    height: auto;
+  }
+  .modal.fade .modal-dialog {
+    width: 365px;
+    max-width: 365px;
+    margin: auto;
+  }
+
+  .modal-body > div {
+    gap: 4px;
+  }
+  .modal-body > div img {
+    width: 80px;
+    height: 80px;
   }
 }
 
