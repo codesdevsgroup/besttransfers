@@ -155,6 +155,9 @@ h2 {
   display: flex;
   align-items: center;
 }
+#home .w-100 {
+  margin-bottom: 60px;
+}
 .home_text h1 {
   font-size: 64px;
   line-height: 124.5%;

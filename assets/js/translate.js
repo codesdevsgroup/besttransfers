@@ -126,9 +126,9 @@ function translateHome(language) {
     return
   }
   document.querySelector('#home .home_text h1').innerHTML =
-    'Viaja con lujo <br /> y comodidad'
+    'Viaje con lujo <br /> y comodidad'
   document.querySelector('#home .home_text p').innerHTML =
-    'Disfruta de un viaje excepcional con tu <br /> propio conductor privado.'
+    'Disfrute de un viaje excepcional con su <br /> propio conductor privado.'
   document.querySelector('#home .home_button button').innerText = 'Contacto'
 }
 
@@ -270,7 +270,7 @@ function translateGetCars(language) {
   }
   document.querySelector('#get_cars h2').innerText = 'Conozca nuestros coches'
   document.querySelector('#get_cars .car-v300D .gc_seat p').innerText =
-    '7 asientos de cuero'
+    '7 sillas en piel"'
   document.querySelector(
     '#get_cars .car-v300D .card-footer:nth-child(2) h5'
   ).innerHTML = 'Usted elige <br /> la canción'
@@ -292,7 +292,8 @@ function translateGetCars(language) {
   ).innerText = 'Techo corredizo'
   document.querySelector('.car-cla200 #gc_footer button').innerText = 'Contacto'
 
-  document.querySelector('#cars h2').innerText = 'Vea nuestra flota de coches'
+  document.querySelector('#cars h2').innerText =
+    'Conozca nuestra flota de coches'
 }
 
 function translateMultilingualDrivers(language) {
@@ -356,13 +357,13 @@ function translateMultilingualDrivers(language) {
   document.querySelector('#multilingual_drivers h3').innerText =
     'Conductores Multilingües'
   document.querySelector('#multilingual_drivers p.text-sm-center').innerText =
-    'Contar con un conductor multilingüe elimina las barreras de comunicación.'
+    'Tener un conductor multilingüe elimina las barreras de comunicación.'
   document.querySelector(
     '#multilingual_drivers .md_card:nth-child(1) p'
   ).innerText = 'Inglés'
   document.querySelector(
     '#multilingual_drivers .md_card:nth-child(2) p'
-  ).innerText = 'Español'
+  ).innerText = 'Castellano'
   document.querySelector(
     '#multilingual_drivers .md_card:nth-child(3) p'
   ).innerText = 'Portugués'
@@ -414,7 +415,7 @@ function translateContact(language) {
     document.querySelector('#contact button.btn-white').innerText = 'Envoyer'
     return
   }
-  document.querySelector('#contact h2').innerText = 'Ponte en contacto'
+  document.querySelector('#contact h2').innerText = 'Póngase en contacto'
   document.querySelector('#contact label[for="name"]').innerText = 'Nombre'
   document.querySelector('#contact label[for="start"]').innerText =
     'Punto de recogida'
