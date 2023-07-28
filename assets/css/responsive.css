@@ -127,9 +127,8 @@
     height: 380px;
   }
   #executive_transportation h2 {
-    font-family: 'Utah', sans-serif;
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 500;
     width: 325px;
     height: 84px;
     margin: 0 auto;
@@ -137,8 +136,7 @@
   .et_cards {
     display: grid !important;
     float: right;
-    width: 345px;
-    margin-bottom: px;
+    width: 340px;
   }
   .et_cards img {
     display: none;
@@ -154,15 +152,15 @@
     font-size: 16px;
   }
   .et_card01 {
-    width: 330px;
+    width: 340px;
     height: 51px;
   }
   .et_card02 {
-    width: 280px;
+    width: 300px;
     height: 51px;
   }
   .et_card03 {
-    width: 226px;
+    width: 250px;
     height: 51px;
   }
 
@@ -319,6 +317,9 @@
     margin-top: 10px;
     margin-bottom: 0;
   }
+  .home_text p br {
+    display: none;
+  }
   .home_button {
     margin-bottom: 20px;
   }
@@ -342,6 +343,9 @@
   #home .d-none img {
     width: 375px;
     height: 393px;
+  }
+  #executive_transportation {
+    margin-block: 78px 20px;
   }
   #cars .container {
     max-width: initial !important;

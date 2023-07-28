@@ -270,7 +270,7 @@ function translateGetCars(language) {
   }
   document.querySelector('#get_cars h2').innerText = 'Conozca nuestros coches'
   document.querySelector('#get_cars .car-v300D .gc_seat p').innerText =
-    '7 sillas en piel"'
+    '7 sillas en piel'
   document.querySelector(
     '#get_cars .car-v300D .card-footer:nth-child(2) h5'
   ).innerHTML = 'Usted elige <br /> la canción'
