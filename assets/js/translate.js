@@ -134,6 +134,9 @@ function translateHome(language) {
 
 function translateExecutiveTransportation(language) {
   if (language === 'en') {
+    document
+      .querySelector('#executive_transportation')
+      .classList.remove('france')
     document.querySelector('#executive_transportation h2').innerText =
       'Executive Transportation Services in Switzerland'
     document.querySelector('#executive_transportation .et_card01 p').innerText =
@@ -145,6 +148,9 @@ function translateExecutiveTransportation(language) {
     return
   }
   if (language === 'pt') {
+    document
+      .querySelector('#executive_transportation')
+      .classList.remove('france')
     document.querySelector('#executive_transportation h2').innerText =
       'Serviços de Transporte Executivo na Suíça'
     document.querySelector('#executive_transportation .et_card01 p').innerText =
@@ -156,6 +162,7 @@ function translateExecutiveTransportation(language) {
     return
   }
   if (language === 'fr') {
+    document.querySelector('#executive_transportation').classList.add('france')
     document.querySelector('#executive_transportation h2').innerText =
       'Services de Transport Exécutif en Suisse'
     document.querySelector('#executive_transportation .et_card01 p').innerText =
@@ -166,6 +173,7 @@ function translateExecutiveTransportation(language) {
       'Transferts / Service de Limousine'
     return
   }
+  document.querySelector('#executive_transportation').classList.remove('france')
   document.querySelector('#executive_transportation h2').innerText =
     'Servicios de Transporte Ejecutivo en Suiza'
   document.querySelector('#executive_transportation .et_card01 p').innerText =

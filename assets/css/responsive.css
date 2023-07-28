@@ -129,7 +129,7 @@
   #executive_transportation h2 {
     font-size: 28px;
     font-weight: 500;
-    width: 325px;
+    width: 360px;
     height: 84px;
     margin: 0 auto;
   }
@@ -150,6 +150,7 @@
     margin-top: 12px;
     margin-left: 10px;
     font-size: 16px;
+    text-align: start;
   }
   .et_card01 {
     width: 340px;
@@ -161,6 +162,19 @@
   }
   .et_card03 {
     width: 250px;
+    height: 51px;
+  }
+
+  #executive_transportation.france .et_cards {
+    width: 360px;
+  }
+
+  #executive_transportation.france .et_card p {
+    font-size: 14px;
+  }
+
+  #executive_transportation.france .et_card01 {
+    width: 360px;
     height: 51px;
   }
 
