@@ -431,7 +431,10 @@
     max-width: 365px;
     margin: auto;
   }
-
+  .modal-body .nav-buttom {
+    width: 36px;
+    height: 36px;
+  }
   .modal-body > div {
     gap: 4px;
   }

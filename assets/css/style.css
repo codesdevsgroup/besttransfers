@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 html {
@@ -18,6 +19,10 @@ html.sr .load-hidden {
 ul {
   padding: 0;
   margin: 0;
+}
+
+section {
+  overflow-x: hidden;
 }
 
 li {
@@ -489,7 +494,7 @@ footer h2 {
 }
 
 .modal-body .custom-scroll::-webkit-scrollbar {
-  height: 8px; /* Largura da scrollbar no Chrome e Safari */
+  height: 5px; /* Largura da scrollbar no Chrome e Safari */
 }
 
 .modal-body .custom-scroll::-webkit-scrollbar-thumb {
