@@ -347,7 +347,7 @@
   }
   .home_text {
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 35px;
   }
   .home_text p br {
     display: none;
@@ -362,6 +362,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: initial;
+    margin-top: 30px;
   }
   #home .w-100 .texts {
     width: auto;
