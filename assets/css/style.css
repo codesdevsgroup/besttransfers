@@ -152,14 +152,13 @@ h2 {
   background-image: url(./../img/img-car-home.png);
   background-repeat: no-repeat;
   background-position: center right;
-  background-size: 35%;
-  height: 100vh;
+  background-size: 55%;
   padding-top: 80px;
   display: flex;
   align-items: center;
 }
 #home .w-100 {
-  margin-bottom: 60px;
+  margin-block: 110px 200px;
 }
 .home_text h1 {
   font-size: 64px;
@@ -449,8 +448,8 @@ footer h2 {
 }
 
 .modal.fade .modal-dialog {
-  width: 600px;
-  max-width: 600px;
+  width: 615px;
+  max-width: 615px;
 }
 
 .modal-body {
@@ -459,25 +458,72 @@ footer h2 {
   align-items: center;
 }
 
-.modal-body > div {
-  gap: 20px;
+.modal-body .carousel-wrapper {
+  padding-inline: 40px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-.modal-body > div img {
+.modal-body .nav-buttom {
+  position: absolute;
+  cursor: pointer;
+}
+
+.modal-body .nav-left {
+  left: -10px;
+}
+
+.modal-body .nav-right {
+  right: -10px;
+}
+
+.modal-body .custom-scroll {
+  gap: 20px;
+  overflow-x: scroll;
+  width: 100%;
+  scrollbar-width: thin; /* Largura da scrollbar */
+  scrollbar-color: #ccc #f5f5f5;
+  scroll-behavior: smooth;
+}
+
+.modal-body .custom-scroll::-webkit-scrollbar {
+  height: 8px; /* Largura da scrollbar no Chrome e Safari */
+}
+
+.modal-body .custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Cor da thumb no Chrome e Safari */
+}
+
+.modal-body .custom-scroll::-webkit-scrollbar-track {
+  background-color: #f5f5f5; /* Cor da track no Chrome e Safari */
+}
+
+.modal-body .custom-scroll > div {
+  display: flex;
+}
+
+.modal-body .custom-scroll img {
   cursor: pointer;
   border-radius: 15.294px;
   border: 2px solid transparent;
 }
 
-.modal-body > div .active {
+.modal-body .custom-scroll .active {
   cursor: pointer;
   border: 2px solid #a30808;
 }
 
-.main-modal-img {
+.main-modal-img,
+.main-modal-video {
   margin-bottom: 20px;
 }
 
+.main-modal-video {
+  max-width: 100%;
+  height: auto;
+}
 .modal-content {
   margin-top: 80px;
 }

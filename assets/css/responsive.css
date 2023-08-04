@@ -1,4 +1,23 @@
-﻿@media screen and (max-width: 1200px) {
+﻿@media screen and (min-width: 2000px) {
+  #home {
+    background-position: center right 350px;
+    background-size: 35% !important;
+  }
+  #home .w-100 {
+    margin-block: 110px 300px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #home {
+    background-size: 50%;
+  }
+  #home .w-100 {
+    margin-block: 110px 270px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   /*   navbar mobile */
   #navigation nav .nav-list,
   .desktop-button {
@@ -103,16 +122,15 @@
   }
   #home .d-none {
     display: flex !important;
-    height: 60vh;
     width: 50%;
     justify-content: flex-end;
-    align-self: center;
   }
   #home .d-none img {
     max-height: 100%;
   }
   .home_button {
     text-align: center;
+    margin-bottom: 20px;
   }
   .home_button .button {
     margin-top: 0;
@@ -353,10 +371,6 @@
   #home .d-none {
     height: auto;
     width: 100%;
-  }
-  #home .d-none img {
-    width: 375px;
-    height: 393px;
   }
   #executive_transportation {
     margin-block: 78px 20px;
