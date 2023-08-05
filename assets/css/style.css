@@ -464,7 +464,6 @@ footer h2 {
 }
 
 .modal-body .carousel-wrapper {
-  padding-inline: 40px;
   width: 100%;
   position: relative;
   display: flex;
@@ -477,11 +476,11 @@ footer h2 {
 }
 
 .modal-body .nav-left {
-  left: -10px;
+  left: 5px;
 }
 
 .modal-body .nav-right {
-  right: -10px;
+  right: 5px;
 }
 
 .modal-body .custom-scroll {
@@ -507,6 +506,7 @@ footer h2 {
 
 .modal-body .custom-scroll > div {
   display: flex;
+  gap: 10px;
 }
 
 .modal-body .custom-scroll img {
@@ -531,4 +531,47 @@ footer h2 {
 }
 .modal-content {
   margin-top: 80px;
+}
+
+input[type='datetime-local']::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+}
+
+.tooltip-custom {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-custom .tooltiptext-custom {
+  visibility: hidden;
+  width: 210px;
+  background-color: #333;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  right: 0px;
+  color: white;
+  opacity: 0.5;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.tooltip-custom input:active + .tooltiptext-custom,
+.tooltip-custom input:focus + .tooltiptext-custom {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img-wrapper {
+  padding-inline: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.car-cla200 .modal-body .custom-scroll {
+  overflow-x: hidden;
+  justify-content: space-around;
 }

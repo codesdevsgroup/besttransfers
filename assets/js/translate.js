@@ -390,6 +390,8 @@ function translateContact(language) {
       'Destination point'
     document.querySelector('#contact label[for="date"]').innerText =
       'Date and time at the pick up point'
+    document.querySelector('#contact .tooltiptext-custom').innerText =
+      '*add 40 CHF for every waiting half hour after the scheduled time'
     document.querySelector('#contact label[for="message"]').innerText =
       'Message'
     document.querySelector('#contact button.btn-white').innerText = 'Send'
@@ -404,6 +406,8 @@ function translateContact(language) {
       'Ponto de destino'
     document.querySelector('#contact label[for="date"]').innerText =
       'Data e hora no ponto de partida'
+    document.querySelector('#contact .tooltiptext-custom').innerText =
+      '*acrésce 40 CHF por cada meia hora de espera após o horário marcado'
     document.querySelector('#contact label[for="message"]').innerText =
       'Mensagem'
     document.querySelector('#contact button.btn-white').innerText = 'Enviar'
@@ -418,6 +422,8 @@ function translateContact(language) {
       'Point de destination'
     document.querySelector('#contact label[for="date"]').innerText =
       'Date et heure de prise en charge'
+    document.querySelector('#contact .tooltiptext-custom').innerText =
+      "*ajouter 40 CHF pour chaque demi-heure d'attente après l'heure prévue"
     document.querySelector('#contact label[for="message"]').innerText =
       'Message'
     document.querySelector('#contact button.btn-white').innerText = 'Envoyer'
@@ -431,6 +437,8 @@ function translateContact(language) {
     'Punto de destino'
   document.querySelector('#contact label[for="date"]').innerText =
     'Fecha y hora en el punto de recogida'
+  document.querySelector('#contact .tooltiptext-custom').innerText =
+    '*añádase 40 CHF por cada media hora de espera después de la hora programada'
   document.querySelector('#contact label[for="message"]').innerText = 'Mensaje'
   document.querySelector('#contact button.btn-white').innerText = 'Enviar'
 }
