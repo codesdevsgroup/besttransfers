@@ -538,7 +538,13 @@
         <div class="row">
           <div class="col-12 col-sm-6 form-field scr_left">
             <label for="name">Name</label>
-            <input type="text" name="name" required />
+            <input 
+              type="text" 
+              name="name" 
+              oninvalid="changeValidity(this)" 
+              oninput="clearValidity(this)" 
+              required 
+            />
           </div>
           <div class="col-12 col-sm-3 form-field scr_right">
             <label for="email">Email</label>
@@ -558,7 +564,7 @@
           </div>
           <div class="col-12 col-sm-6 form-field scr_left tooltip-custom">
             <label for="date">Date and time at the pick up point</label>
-            <input type="datetime-local" name="date" required />
+            <input type="datetime-local" id="datepicker" name="date" required />
             <span class="tooltiptext-custom">* Resultará um acréscimo de 80 CHF por cada hora de espera após o horário marcado</span>
           </div>
           <div class="col-12 col-sm-6 form-field scr_right">
@@ -649,43 +655,6 @@
         </div>
       </div>
     </footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="carousel slide" id="main-carousel" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <a class="popup-link" href="https://via.placeholder.com/800x600.png">
-                  <img src="https://via.placeholder.com/800x600.png" alt="Imagem 1" class="d-block w-100">
-                </a>
-              </div>
-              <div class="carousel-item">
-                <a class="popup-link" href="https://via.placeholder.com/800x600.png">
-                  <img src="https://via.placeholder.com/800x600.png" alt="Imagem 2" class="d-block w-100">
-                </a>
-              </div>
-              <!-- Adicione mais itens do carrossel conforme necessário -->
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="row thumbnail-carousel">
-            <div class="col-3">
-              <a href="#" data-target="#main-carousel" data-slide-to="0">
-                <img src="https://via.placeholder.com/200x150.png" alt="Imagem 1" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-3">
-              <a href="#" data-target="#main-carousel" data-slide-to="1">
-                <img src="https://via.placeholder.com/200x150.png" alt="Imagem 2" class="img-fluid">
-              </a>
-            </div>
-            <!-- Adicione mais itens de miniatura conforme necessário -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <button id="fullscreenButton">Ativar Tela Cheia</button>
     <script src="./assets/js/jquery-3.6.1.min.js"></script>
     <script src="./assets/js/main.js?v=9"></script>
     <script src="./assets/js/carousel.js?v=9"></script>

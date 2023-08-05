@@ -502,3 +502,25 @@ function translateFooter(language) {
   document.querySelector('footer .footer_social h2').innerText =
     'Redes Sociales'
 }
+
+function changeValidity(element) {
+  const language = localStorage.getItem('@besttransfer-1.0.0-language') ?? 'en'
+  switch (language) {
+    case 'en':
+      element.setCustomValidity('Fill this field.')
+      break
+    case 'pt':
+      element.setCustomValidity('Preencha esse campo.')
+      break
+    case 'fr':
+      element.setCustomValidity('Remplissez ce champ.')
+      break
+    default:
+      element.setCustomValidity('Rellena este campo.')
+      break
+  }
+}
+
+function clearValidity(element) {
+  element.setCustomValidity('')
+}

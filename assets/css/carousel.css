@@ -23,6 +23,7 @@
 .modal-open .modal {
   display: flex !important;
   justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content .close {
@@ -47,6 +48,8 @@
   position: relative;
   display: flex;
   align-items: center;
+  overflow: auto;
+  padding-bottom: 10px;
 }
 
 .modal-body .nav-buttom {
@@ -123,4 +126,31 @@
   flex: 1;
   width: 100%;
   justify-content: center;
+}
+
+@media (max-width: 1400px) {
+  .modal.fade .modal-dialog {
+    max-width: 70vw;
+  }
+  .modal-content {
+    width: 70vw;
+  }
+  .main-modal-img,
+  .main-modal-video {
+    margin-bottom: 20px;
+    max-height: 60vh;
+  }
+}
+
+@media (max-width: 1080px) {
+  .modal-body .custom-scroll img {
+    width: 100px;
+    height: 100px;
+  }
+  .modal-body .custom-scroll {
+    justify-content: initial;
+  }
+  .modal-content {
+    width: 100%;
+  }
 }
