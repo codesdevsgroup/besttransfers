@@ -115,7 +115,7 @@ $(document).ready(function () {
       scrollRight()
       return
     }
-    let newSrc = `./assets/img/cars/${car}/modal_${className}.webp`
+    let newSrc = `./assets/img/cars/${car}/modal_${className}.jpg`
     $(`.car-${car} .modal .img-carousel.${className}`).addClass('active')
     $(`.car-${car} .main-modal-img`).attr('src', newSrc)
     if (className === 'cars05' || className === 'cars06') {

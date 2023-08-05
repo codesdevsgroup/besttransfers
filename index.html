@@ -26,6 +26,7 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
 
+    <link rel="stylesheet" href="./assets/css/carousel.css?v=9">
     <link rel="stylesheet" href="./assets/css/style.css?v=9">
     <link rel="stylesheet" href="./assets/css/responsive.css?v=9" />
     <link rel="stylesheet" href="./assets/css/bootstrap-custom.css?v=9" />
@@ -258,13 +259,13 @@
                 <div class="modal fade" id="modal1">
                   <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
-                      <div class="modal-header">
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                        ></button>
-                      </div>
+                      <button
+                        class="close"
+                        data-bs-dismiss="modal"
+                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M32.1344 30.3656C32.2505 30.4818 32.3427 30.6197 32.4055 30.7714C32.4684 30.9231 32.5007 31.0858 32.5007 31.25C32.5007 31.4143 32.4684 31.5769 32.4055 31.7286C32.3427 31.8804 32.2505 32.0183 32.1344 32.1344C32.0183 32.2505 31.8804 32.3427 31.7286 32.4055C31.5769 32.4684 31.4143 32.5007 31.25 32.5007C31.0858 32.5007 30.9231 32.4684 30.7714 32.4055C30.6197 32.3427 30.4818 32.2505 30.3656 32.1344L20 21.7672L9.6344 32.1344C9.39985 32.369 9.08173 32.5007 8.75002 32.5007C8.41832 32.5007 8.1002 32.369 7.86565 32.1344C7.6311 31.8998 7.49933 31.5817 7.49933 31.25C7.49933 30.9183 7.6311 30.6002 7.86565 30.3656L18.2328 20L7.86565 9.6344C7.6311 9.39985 7.49933 9.08173 7.49933 8.75002C7.49933 8.41832 7.6311 8.1002 7.86565 7.86565C8.1002 7.6311 8.41832 7.49933 8.75002 7.49933C9.08173 7.49933 9.39985 7.6311 9.6344 7.86565L20 18.2328L30.3656 7.86565C30.6002 7.6311 30.9183 7.49933 31.25 7.49933C31.5817 7.49933 31.8998 7.6311 32.1344 7.86565C32.369 8.1002 32.5007 8.41832 32.5007 8.75002C32.5007 9.08173 32.369 9.39985 32.1344 9.6344L21.7672 20L32.1344 30.3656Z" fill="white"/>
+                        </svg></button>
                       <div class="modal-body">
                         <div class="img-wrapper">
                           <img
@@ -272,8 +273,8 @@
                             class="img-fluid main-modal-img"
                             alt=""
                           />
-                          <img class="nav-left nav-buttom" src="./assets/img/arow-left.svg" alt="">
-                          <img class="nav-right nav-buttom" src="./assets/img/arow-right.svg" alt="">
+                          <img class="nav-left nav-buttom" src="./assets/img/arow-left.png" alt="">
+                          <img class="nav-right nav-buttom" src="./assets/img/arow-right.png" alt="">
                         </div>
                         <div class="carousel-wrapper">
                           <div class="d-flex custom-scroll">
@@ -402,22 +403,23 @@
                 <div class="modal fade" id="modal2">
                   <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
-                      <div class="modal-header">
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                        ></button>
-                      </div>
+                      <button
+                        class="close"
+                        data-bs-dismiss="modal"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                          <path d="M32.1344 30.3656C32.2505 30.4818 32.3427 30.6197 32.4055 30.7714C32.4684 30.9231 32.5007 31.0858 32.5007 31.25C32.5007 31.4143 32.4684 31.5769 32.4055 31.7286C32.3427 31.8804 32.2505 32.0183 32.1344 32.1344C32.0183 32.2505 31.8804 32.3427 31.7286 32.4055C31.5769 32.4684 31.4143 32.5007 31.25 32.5007C31.0858 32.5007 30.9231 32.4684 30.7714 32.4055C30.6197 32.3427 30.4818 32.2505 30.3656 32.1344L20 21.7672L9.6344 32.1344C9.39985 32.369 9.08173 32.5007 8.75002 32.5007C8.41832 32.5007 8.1002 32.369 7.86565 32.1344C7.6311 31.8998 7.49933 31.5817 7.49933 31.25C7.49933 30.9183 7.6311 30.6002 7.86565 30.3656L18.2328 20L7.86565 9.6344C7.6311 9.39985 7.49933 9.08173 7.49933 8.75002C7.49933 8.41832 7.6311 8.1002 7.86565 7.86565C8.1002 7.6311 8.41832 7.49933 8.75002 7.49933C9.08173 7.49933 9.39985 7.6311 9.6344 7.86565L20 18.2328L30.3656 7.86565C30.6002 7.6311 30.9183 7.49933 31.25 7.49933C31.5817 7.49933 31.8998 7.6311 32.1344 7.86565C32.369 8.1002 32.5007 8.41832 32.5007 8.75002C32.5007 9.08173 32.369 9.39985 32.1344 9.6344L21.7672 20L32.1344 30.3656Z" fill="white"/>
+                        </svg>
+                      </button>
                       <div class="modal-body">
                         <div class="img-wrapper">
                           <img
-                            src="./assets/img/cars/cla200/modal_cars01.webp"
+                            src="./assets/img/cars/cla200/modal_cars01.jpg"
                             class="img-fluid main-modal-img"
                             alt=""
                           />
-                          <img class="nav-left nav-buttom" src="./assets/img/arow-left.svg" alt="">
-                          <img class="nav-right nav-buttom" src="./assets/img/arow-right.svg" alt="">
+                          <img class="nav-left nav-buttom" src="./assets/img/arow-left.png" alt="">
+                          <img class="nav-right nav-buttom" src="./assets/img/arow-right.png" alt="">
                         </div>
                         <div class="d-flex custom-scroll">
                           <div>
@@ -647,9 +649,46 @@
         </div>
       </div>
     </footer>
-    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="carousel slide" id="main-carousel" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a class="popup-link" href="https://via.placeholder.com/800x600.png">
+                  <img src="https://via.placeholder.com/800x600.png" alt="Imagem 1" class="d-block w-100">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a class="popup-link" href="https://via.placeholder.com/800x600.png">
+                  <img src="https://via.placeholder.com/800x600.png" alt="Imagem 2" class="d-block w-100">
+                </a>
+              </div>
+              <!-- Adicione mais itens do carrossel conforme necessário -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row thumbnail-carousel">
+            <div class="col-3">
+              <a href="#" data-target="#main-carousel" data-slide-to="0">
+                <img src="https://via.placeholder.com/200x150.png" alt="Imagem 1" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="#" data-target="#main-carousel" data-slide-to="1">
+                <img src="https://via.placeholder.com/200x150.png" alt="Imagem 2" class="img-fluid">
+              </a>
+            </div>
+            <!-- Adicione mais itens de miniatura conforme necessário -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="fullscreenButton">Ativar Tela Cheia</button>
     <script src="./assets/js/jquery-3.6.1.min.js"></script>
     <script src="./assets/js/main.js?v=9"></script>
+    <script src="./assets/js/carousel.js?v=9"></script>
     <script src="./assets/js/cars.js?v=9"></script>
     <script src="./assets/js/translate.js?v=9"></script>
     <script src="./assets/js/effects.js?v=9"></script>
