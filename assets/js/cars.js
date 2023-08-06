@@ -49,7 +49,7 @@ $(document).ready(function () {
       navigateCarousel(-1, 3)
       return
     }
-    navigateCarousel(-1, 5)
+    navigateCarousel(-1, 6)
   })
 
   $('.nav-right').click(function () {
@@ -57,7 +57,7 @@ $(document).ready(function () {
       navigateCarousel(1, 3)
       return
     }
-    navigateCarousel(1, 5)
+    navigateCarousel(1, 6)
   })
 
   function navigateCarousel(offset, max) {
@@ -65,7 +65,6 @@ $(document).ready(function () {
       ? 'cla200'
       : 'v300D'
     const activeImage = $(`.car-${carType} .img-carousel-modal.active`)
-    console.log(activeImage)
     if (activeImage.length) {
       const allImages = $(`.car-${carType} .img-carousel-modal`)
       const currentIndex = allImages.index(activeImage)
@@ -78,7 +77,6 @@ $(document).ready(function () {
         newIndex = currentIndex + offset
       }
 
-      console.log(newIndex)
       activeImage.removeClass('active')
       allImages.eq(newIndex).addClass('active')
       const imgActiveSrc = `.car-${carType} .img-carousel-modal.active`

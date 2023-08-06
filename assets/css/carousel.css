@@ -128,7 +128,7 @@
   justify-content: center;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
   .modal.fade .modal-dialog {
     max-width: 70vw;
   }
@@ -142,6 +142,15 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .modal.fade .modal-dialog {
+    max-width: 85vw;
+  }
+  .modal-content {
+    width: 85vw;
+  }
+}
+
 @media (max-width: 1080px) {
   .modal-body .custom-scroll img {
     width: 100px;
@@ -149,6 +158,9 @@
   }
   .modal-body .custom-scroll {
     justify-content: initial;
+  }
+  .modal.fade .modal-dialog {
+    max-width: 70vw;
   }
   .modal-content {
     width: 100%;
